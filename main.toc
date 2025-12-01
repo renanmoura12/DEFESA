@@ -1,0 +1,50 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{\numberline {1}INTRODUÇÃO}{8}{chapter.1}%
+\contentsline {chapter}{\numberline {2}OBJETIVOS}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Objetivos gerais}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Objetivos especificos}{11}{section.2.2}%
+\contentsline {chapter}{\numberline {3}RISCOS E BENEFICIOS}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Benefícios}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Riscos}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Prevenção e minimização dos riscos}{12}{section.3.3}%
+\contentsline {chapter}{\numberline {4}FUNDAMENTAÇÃO TEÓRICA}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pré-Natal}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pré-eclâmpsia}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Biomarcadores}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Padrões arquitetônicos de softwares }{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}API REST}{14}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Machine Learning}{15}{section.4.6}%
+\contentsline {chapter}{\numberline {5}ESTADO DA ARTE}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {6}PPML – API REST FULL}{19}{chapter.6}%
+\contentsline {chapter}{\numberline {7}METODOLOGIA}{21}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Análise dos dados}{21}{section.7.1}%
+\contentsline {chapter}{REFERÊNCIAS}{22}{section*.4}%
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{APÊNDICES}{26}{section*.4}%
