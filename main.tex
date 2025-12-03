@@ -19,6 +19,7 @@
 \usetikzlibrary{arrows.meta,bending}
 \usepackage[all]{xy}
 \usepackage{capt-of}
+\usepackage{pdfpages}
 
 % Ambiente quadro
 \usepackage{newfloat}
@@ -36,6 +37,9 @@
 \usepackage{blindtext}
 \usepackage[titletoc]{appendix}
 \usepackage{hyphenat}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
 
 %----------------- MATEMÁTICA -----------------s
 \usepackage{amsmath, amssymb, amsfonts, amsthm}
@@ -46,6 +50,7 @@
 \usepackage{cancel}
 \usepackage{chngcntr}
 \counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 
 
 \DeclareMathOperator{\mdc}{mdc}
@@ -406,11 +411,15 @@ A integração de modelos preditivos por meio de APIs tem sido amplamente adotad
 \chapter{ESTADO DA ARTE}
 \thispagestyle{myheadings}
 
-Métodos tradicionais de predição para a PE incluem a análise de fatores de risco clínicos, como idade materna, índice de massa corporal (IMC), antecedentes obstétricos e medidas da pressão arterial\cite{ACOG2020}. Além disso, exames laboratoriais e ultrassonográficos, como a dosagem do fator de crescimento placentário (PLGF) e a medida da artéria uterina por Doppler, têm sido utilizados para estimar o risco de desenvolvimento da condição\cite{Poon2014}. No entanto, essas abordagens apresentam limitações, como alto custo e baixa acessibilidade, dificultando sua ampla adoção em países de baixa e média renda\cite{who2019}.
+Para aprofundar sobre o assunto, uma revisão de escopo esta sendo conduzida em paralelo a este trabalho com o intuito de aprofundarmos sobre a eficacia da aplicação da ML para o auxilo no diagnóstico precoce da PE. As buscas sobre os trabalhos co-relatos ao tema ocorreram em três bases online, PubMed, Embase (Elsevier) e Biblioteca virtual de saúde (BVS). O protocolo da revisão ja foi produzido e publicado, indicando as variaveis de buscas e mais detalhes (Anexo A).%adicionar a revisão de escopo no anexo A
+
+No entanto, antes, precisamos abordar um pouco os métodos tradicionais de predição para a PE, que incluem a análise de fatores de risco clínicos, como idade materna, índice de massa corporal (IMC), antecedentes obstétricos e medidas da pressão arterial\cite{ACOG2020}. Além disso, exames laboratoriais e ultrassonográficos, como a dosagem do fator de crescimento placentário (PLGF) e a medida da artéria uterina por Doppler, têm sido utilizados para estimar o risco de desenvolvimento da condição\cite{Poon2014}. Essas abordagens apresentam limitações, como alto custo e baixa acessibilidade, dificultando sua ampla adoção em países de baixa e média renda\cite{who2019}.
 
 As calculadoras de riscos também são utilizadas para prever a PE e empregam métodos de regressão integrando um conjunto de variáveis preditivas, incluindo características maternas, pressão arterial média (PAM), índice de pulsatilidade da artéria uterina (UTA-PI), PLGF e proteína plasmática A associada à gravidez (PAPP-A) para estimar riscos obstétricos. Desenvolvidas em colaboração entre a Fetal Medicine Foundation (FMF) e o Hospital Clínic de Barcelona, essas ferramentas demonstraram maior precisão diagnóstica em comparação com métodos tradicionais, além de serem a única abordagem com validação internacional\cite{Riishede2023}.
 
 O estudo de \cite{Rezende2024}, realizado no brasil, mostra que mesmo validados, métodos como esse não levam em conta a população local para calibrar seus parâmetros fundamentais, o que é essencial para uma boa precisão em tipos de populações distintas, no qual o resultado é uma taxa considerada alta de falsos positivos (FPR) de 24,4\%. Quando comparamos com outros modelos preditivos que utilizam ML, que obtêm resultados de FPR abaixo de 15\%\cite{Gil2024}. Com isso podemos observar a discrepância desses resultados, demonstrando que a falta de dados personalizados para a população afeta expressivamente o nível de precisão do resultado. Apesar disso, o modelo da FMF mantém relevância clínica por sua validação internacional e simplicidade operacional, sendo amplamente adotado em contextos de recursos limitados e frequentemente referenciadas por outros autores que desenvolvem modelos de aprendizado de máquina como um padrão para validação de sua acurácia, por ser um padrão aceito e validado\cite{Torres-Torres}.
+
+Além disso, Araújo et al. propuseram um modelo de aprendizado de máquina baseado em LightGBM, treinado com dados sintéticos gerados pela metodologia DAS (Data Augmentation and Smoothing) a partir de parâmetros do hemograma completo (CBC), para apoiar o diagnóstico de pré-eclâmpsia com sinais de gravidade\cite{Araujo2024}. O modelo alcançou AUROC de 0,90, sensibilidade de 0,95 e especificidade de 0,79, evidenciando o alto potencial preditivo dessa combinação. No entanto, por depender de exame laboratorial, ainda adiciona uma etapa e um requisito de infraestrutura ao fluxo assistencial, o que pode limitar sua aplicabilidade imediata em cenários com recursos mais restritos.
 
 Demonstrando o potencial das tecnologias de IA na transformação do cuidado pré-natal um estudo desenvolveu usando Python, scikit-learn e TensorFlow, com dados analisados por meio do SPSS 22 uma versão do IBM SPSS Statistics para prever o risco de PE. Enquanto algoritmos de deep learning e Extra Trees Classifier, foram empregados para avaliar o poder preditivo de diferentes variáveis. O estudo utilizou técnicas como aumento de gradiente e otimização de hiper parâmetros para melhorar o desempenho do modelo, que demonstrou uma sensibilidade de 73,7\% e especificidade de 92,7\%, indicando sua eficácia na distinção entre casos positivos e negativos para pré-eclâmpsia\cite{Bulez2024}.
 
@@ -418,33 +427,102 @@ Recente estudo chinês testou cinco algoritmos de classificação diferentes, Lo
 
 Portanto, fica evidente a viabilidade e relevância do desenvolvimento de uma nova ferramenta preditiva para avaliação do risco de pré-eclâmpsia baseada em algoritmos de machine learning, utilizando dados clínicos específicos da nossa população. Essa abordagem personalizada tem o potencial de superar as limitações dos modelos atuais, especialmente no que se refere à taxa de falsos positivos e à acurácia em contextos locais, contribuindo significativamente para a tomada de decisão clínica mais precisa e eficaz e facilitar a implementação dessas ferramentas em diferentes realidades socioeconômicas. Diante deste cenário, construimos um modelo de ML, o Lightgbm, implementado em uma API REST para prever a PE, elegemos esse modelo após uma revisão sistematica da eficacia do machine learning na predição da PE no geral, e para a nossa realidade do tamanho da amostra que iremos trabalhar os algoritmos da familia do gradient boosting(GBM) se mostraram sempre acertivos e sem complexidade para o treinamento.
 
+\setlength{\tabcolsep}{4pt} % diminui espaçamento lateral
+\renewcommand{\arraystretch}{1.25} % melhora leitura vertical
+
+\begin{table}[H]
+\centering
+\caption{Comparação entre modelos de predição de pré-eclâmpsia descritos na literatura e o presente estudo.}
+\small
+
+\begin{tabularx}{\textwidth}{
+ >{\RaggedRight\arraybackslash}p{2.6cm}
+ >{\RaggedRight\arraybackslash}X
+ >{\centering\arraybackslash}p{1.4cm}
+ >{\centering\arraybackslash}p{1.9cm}
+ >{\centering\arraybackslash}p{2.4cm}
+ >{\RaggedRight\arraybackslash}X
+}
+
+\hline
+\textbf{Estudo / Modelo} &
+\textbf{Variáveis} &
+\textbf{AUC} &
+\textbf{Sensibilidade} &
+\textbf{Especificidade / FPR} &
+\textbf{Observações} \\
+\hline
+
+FMF (regressão) \cite{Riishede2023,Rezende2024}
+& Dados maternos; PAM; UTA-PI; PLGF; PAPP-A
+& --
+& --
+& FPR = 24,4\%
+& Modelo validado internacionalmente; elevada taxa de falsos positivos na população brasileira. \\
+
+Araújo et al. (LightGBM) \cite{Araujo2024}
+& Hemograma completo (CBC) com dados sintéticos (DAS)
+& 0,90
+& 0,95
+& 0,79 (esp.)
+& Requer exames laboratoriais; maior complexidade operacional. \\
+
+Bulez et al. (DL / Extra Trees) \cite{Bulez2024}
+& Variáveis clínicas diversas
+& --
+& 73,7\%
+& 92,7\% (esp.)
+& Deep Learning com otimização extensa de hiperparâmetros. \\
+
+Li et al. (Stacking) \cite{Li2024}
+& Dados maternos; PAM; UTA-PI; PLGF; PAPP-A
+& 0,884
+& --
+& --
+& Validação em centro único; uso de SHAP para explicabilidade. \\
+
+\textbf{Presente estudo (LightGBM)}
+& \textbf{25 variáveis clínicas/obstétricas (peso, IMC, Idade, diabetes, HAS, Doppler, comorbidades)}
+& \textbf{0,9669}
+& \textbf{0,91}
+& \textbf{0,955 (esp.) / FPR = 4,5\%}
+& \textbf{Amostra real local; API clínica leve e sem necessidade de exames laboratoriais.} \\
+
+\hline
+\end{tabularx}
+
+\end{table}
+
+
 %--------------
 %---CAPÍTULO VI
 
 \chapter{PPML – API REST FULL}
 \thispagestyle{myheadings}
 
-Foi desenvolvida em Python 3.9+ utilizando FastAPI como framework web assíncrono, com validação automática de entrada via Pydantic e documentação OpenAPI/Swagger nativa. A comunicação ocorre via HTTP/HTTPS com payloads JSON, suportando deploy containerizado utilizando Uvicorn.
+Foi denominada PPML e desenvolvida em \textit{Python} 3.9+ utilizando \textit{FastAPI} como \textit{framework web} assíncrono, com validação automática de entrada via Pydantic e documentação OpenAPI/Swagger nativa. A comunicação ocorre via HTTP/HTTPS com payloads JSON, suportando deploy containerizado utilizando Uvicorn, e publicado no serviço de nuvem do \textit{Heroku}
 
-O modelo final implementado foi o LightGBM(LGBMClassifier) de Gradiente Boosting otimizado para classificação binária, por demonstrar resultados com mais precisão com o tamanho da amostra disponivel, treinado com 24 features clínicas/obstétricas(peso, IMC, diabetes, hipertensão, percentis Doppler, comorbidades). Configurando com n\_estimators=500, learning\_rate=0.1, num\_leaves=31, max\_depth=6 e regularização (reg\_alpha/lambda=0.1), alcançou AUC-ROC 0.9669, precisão/recall/F1 0.9091 no conjunto de teste independente(22+22 casos), com early stopping em 800 iterações.
+O modelo final implementado foi o LightGBM(LGBMClassifier) de Gradiente Boosting otimizado para classificação binária, por demonstrar resultados com mais precisão com o tamanho da amostra disponivel, treinado com 25 features clínicas/obstétricas(peso, idade, IMC, diabetes, hipertensão, percentis Doppler, comorbidades). Configurando com n\_estimators=500, learning\_rate=0.1, num\_leaves=31, max\_depth=6 e regularização (reg\_alpha/lambda=0.1), alcançou AUC-ROC 0.9669, precisão/recall/F1 0.9091 no conjunto de teste independente(22+22 casos), com early stopping em 800 iterações.
 
-O pré-processamento segue pipeline customizada com pandas (manipulação), scikit-learn StandardScaler (normalização), mapeamentos categóricos (raça: Branco=1/Pardo=2/Preto=3; histórico diabetes), extração de comorbidades via regex, preenchimento NaN (0/moda), clipping realista (peso 40-150kg) e garantia de 24 features fixas.
+Também foi desenvolvido e avaliado um modelo baseado em Rede Neural para classificação binária, treinado com as mesmas 25 variáveis clínicas e obstétricas, utilizando normalização dos dados e balanceamento por oversampling. Entretanto, com o tamanho limitado da amostra disponível, o modelo apresentou capacidade discriminatória inferior à do método de Gradiente Boosting. A avaliação no conjunto de teste mostrou AUC-ROC = 0.6548, indicando baixo poder de separação entre os desfechos. A análise por diferentes limiares de decisão evidenciou desempenho instável, com destaque para o melhor ponto em threshold = 0.20, no qual foram obtidos precision = 0.292, recall = 1.000 e F1-score = 0.452. Em limiares mais conservadores, observou-se queda acentuada da sensibilidade, como em threshold = 0.40, com precision = 0.250, recall = 0.429 e F1-score = 0.316, e em threshold = 0.50, com precision = 0.500, recall = 0.286 e F1-score = 0.364. Esses resultados demonstram que, apesar da alta sensibilidade obtida em limiares baixos, a rede neural apresentou elevado número de falsos positivos e desempenho global insatisfatório para aplicação clínica isolada, reforçando a superioridade do modelo baseados em \textit{Gradient Boosting} para o contexto estudado.
 
-O treinamento incorporou SMOTE (balanceamento 15.9\%→50\% positivos), GroupShuffleSplit por paciente (evita data leakage), data augmentation gaussiana (+40\% nas features contínuas) e splits estratificados (treino 72\%, validação 13\%, teste 15\%). Avaliação incluiu ROC-AUC, matriz confusão, curvas aprendizado e SHAP-like feature importance (top: peso, diabetes, idadeGestacional).
+O pré-processamento do modelo implementado segue pipeline customizada com pandas (manipulação), \textit{scikit-learn}, \textit{StandardScaler} (normalização), mapeamentos categóricos (raça: Branco=1/Pardo=2/Preto=3; histórico diabetes), extração de comorbidades via \textit{regex} de acordo com as entradas categorizadas, preenchimento NaN (0/moda), e garantia de 25 features fixas.
+
+O treinamento incorporou SMOTE (balanceamento 15.9\%→50\% positivos), GroupShuffleSplit por paciente para evitar data leakage, data augmentation gaussiana, onde aumentamos +40\% nas features contínuas e splits estratificados, separando para treino um total de 72\%, validação 13\%, teste 15\%. Avaliação incluiu ROC-AUC, matriz confusão, curvas aprendizado e SHAP-like feature importance, onde no top 3: peso, diabetes, idade).
 
 Endpoints expõem predict\_lgbm (probabilidade + classificação risco),health (status modelos) e features (esquema entrada), com threshold 0.5 para alto/baixo risco e tratamento robusto de exceções. disponibilizaremos o serviço através de um servidor Linux de alta disponibilidade, hospedado no Heroku, uma plataforma em nuvem de baixo custo, podendo também ser utilizado como ambiente de treinamento e teste dos modelos.
 
 \begin{quadro}[H]
 \centering
 
-
-{\bfseries Quadro 1: Dados de entrada para predição}
+{\bfseries Quadro 1: Dados de entrada para predição (continua)}
 
 \vspace{2mm}
-%ajeitar os dados de entrada
+
 \begin{tabular}{|l|}
 \hline
 Peso (kg) \\ \hline
+Idade \\ \hline
 Índice de Massa Corporal (IMC) \\ \hline
 Diabetes \\ \hline
 Hipertensão \\ \hline
@@ -460,6 +538,22 @@ Idade gestacional corrigida \\ \hline
 Peso fetal \\ \hline
 Percentil da artéria uterina \\ \hline
 Percentil do peso fetal \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+\footnotesize
+Fonte: Adaptado de Fetal Medicine Foundation, 2025.
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+
+{\bfseries Quadro 1: Dados de entrada para predição (continuação)}
+
+\vspace{2mm}
+
+\begin{tabular}{|l|}
+\hline
 Hipertensão pré-existente \\ \hline
 Endometriose \\ \hline
 Hipotireoidismo \\ \hline
@@ -470,14 +564,19 @@ Gastrite \\ \hline
 Outras doenças associadas \\ \hline
 \end{tabular}
 
-\vspace{2mm} % Espaçamento antes da nota
+\vspace{2mm}
 \footnotesize
 Fonte: Adaptado de Fetal Medicine Foundation, 2025.
-
 \end{quadro}
 
-O projeto foi organizado em pastas funcionais básicas para facilitar manutenção e desenvolvimento ágil, no qual a pasta API contém os endpoints RESTful, gerenciando recebimento e validação dos dados e respostas. já a pasta DATA cuida do pré-processamento, limpeza e transformação dos dados clínicos necessários para alimentar o modelo. A pasta MODELS armazena o modelo treinado, o LightGBM serializado, e scripts para carregamento e inferência. a pasta NOTEBOOKS é usada para experimentação, treinamento, avaliação e geração dos modelos, incluindo análise exploratória e métricas. A organização do codigo foi pensada para seguir uma organização simples, seguindo os principios do Clean code, garantindo separação das responsabilidades e modularidade.
 
+O projeto foi organizado em pastas funcionais básicas para facilitar manutenção e desenvolvimento ágil, no qual a pasta API contém os endpoints RESTful, gerenciando recebimento e validação dos dados e respostas. já a pasta DATA armazena a planilha utilizada para o treinamento e para alimentar o modelo. A pasta MODELS armazena o modelo treinado, o LightGBM serializado, e scripts para carregamento e inferência. a pasta NOTEBOOKS é usada para experimentação, treinamento, avaliação e geração dos modelos, incluindo análise exploratória e métricas. A organização do codigo foi pensada para seguir uma organização simples, seguindo os principios do Clean code, garantindo separação das responsabilidades e modularidade.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagens/pastas.png}
+    \caption{Fonte: Autor, 2025.}
+\end{figure}
 
 
 \chapter{METODOLOGIA}
@@ -491,7 +590,155 @@ A metodologia do desenvolvimento da PPML seguirá o processo de pipeline de Mach
 \end{figure}
 
 \section{Análise dos dados}
-Os dados para treinamento do modelo serão baseados em dados clínicos e exames ultrassonográficos armazenados no banco de dados da clínica privada EMBRION que nos autorizou o seu uso através de uma carta de consentimento (anexo B).
+
+Os dados utilizados neste estudo são provenientes do banco de dados relacional da clínica privada EMBRION, composto por laudos ultrassonográficos e informações clínicas de gestantes atendidas na instituição. Cada registro é associado a um identificador único de paciente (\textit{PacienteId}), não havendo acesso a informações diretamente identificáveis, o que garante a confidencialidade das participantes. Inicialmente, foi realizada uma análise exploratória para quantificar o número de pacientes e exames disponíveis, caracterizar a distribuição do desfecho de pré-eclâmpsia e inspecionar a presença de valores ausentes, inconsistências em datas (por exemplo, datas fora do intervalo gestacional plausível) e possíveis erros de digitação em variáveis contínuas, como peso, índice de massa corporal (IMC) e medidas fetais.
+
+Essa etapa permitiu definir quais tipos de exames ultrassonográficos seriam considerados (como obstétrico simples, obstétrico com Doppler e translucência nucal), bem como avaliar a viabilidade de aproveitar múltiplos exames por gestante ao longo da gestação. Também foram identificadas as principais variáveis clínicas de interesse, tais como idade materna, presença de diabetes e hipertensão, histórico obstétrico e tabagismo, de modo a orientar as etapas subsequentes de preparação dos dados e seleção de atributos.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/diagrama_embrion.png}
+    \caption{Fonte: Fetal Medicine Foundation, 2025.}
+\end{figure}
+
+\section{Preparação dos dados e validação}
+
+Após a etapa exploratória, os dados clínicos e ultrassonográficos foram exportados dos sistemas da clínica e unificados em uma única planilha, na qual as diferentes tabelas foram integradas por meio do campo \textit{PacienteId}. A preparação dos dados envolveu a conversão explícita dos tipos de variáveis (por exemplo, datas, números inteiros e reais), a padronização de categorias textuais (como cor/raça, histórico familiar de diabetes e presença de comorbidades) e o cálculo da idade materna a partir da data de nascimento e de uma data de referência consistente para cada paciente. Valores ausentes foram tratados com regras específicas: uso da moda para variáveis categóricas, substituição por zero para variáveis que representam ausência de condição clínica e utilização de valores de referência quando não foi possível inferir a informação a partir dos registros.
+
+Além disso, foram aplicados limites fisiologicamente plausíveis às variáveis contínuas, com o objetivo de mitigar o impacto de erros de digitação sem descartar registros inteiros (por exemplo, restringindo a idade materna a um intervalo entre 15 e 50 anos, peso entre 40 e 150 kg, IMC entre 15 e 50, e peso fetal máximo de 5\,000 g). A partir de textos livres sobre antecedentes clínicos, foram criadas variáveis binárias indicadoras de condições específicas, como hipertensão pré-existente, trombofilia, endometriose, doenças tireoidianas e outras comorbidades relevantes. A versão final do conjunto de dados pré-processado foi submetida à validação de uma especialista em medicina fetal, que avaliou a coerência das decisões de codificação, inclusão e exclusão de variáveis, bem como dos limites adotados, à luz do conhecimento clínico atual sobre fatores de risco para pré-eclâmpsia.
+
+\section{Treinamento do modelo}
+
+Concluída a preparação dos dados, procedeu-se à definição da variável alvo (\textit{PreEclampsia}) e do conjunto de atributos de entrada, compostos por variáveis clínicas e ultrassonográficas selecionadas na etapa anterior. Para evitar vazamento de informação entre conjuntos de treino e teste, foi adotada uma estratégia de divisão baseada em grupos, garantindo que todos os registros de uma mesma gestante permanecessem em apenas um dos conjuntos. Em seguida, foram construídos os conjuntos de treino, validação e teste, com estratificação em relação ao desfecho para preservar a proporção de casos de pré-eclâmpsia em cada partição.
+
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{table}[H]
+\centering
+\caption{Variáveis maternas e ultrassonográficas utilizadas no estudo.}
+\small
+
+\begin{tabularx}{\textwidth}{
+  >{\RaggedRight\arraybackslash}p{3.2cm}
+  >{\RaggedRight\arraybackslash}X
+}
+
+\hline
+\textbf{Fonte} & \textbf{Variável} \\
+\hline
+
+Dados maternos/ultrassonográficos &
+Paciente ID \\
+& Data \\
+& Peso \\
+& IMC \\
+& Diabetes \\
+& Hipertensão \\
+& Data de Nascimento \\
+& Data Provável do Parto \\
+& Peso Primeiro Trimestre \\
+& Origem Racial \\
+& Histórico Familiar de Diabetes \\
+& Risco Trissomia 21 \\
+& Risco Trissomia 18 \\
+& Risco Basal Pré-Eclâmpsia \\
+& Risco Corrigido Pré-Eclâmpsia \\
+& Risco Restrição de Crescimento \\
+& Percentil \\
+& Média IP – Percentil Artéria uterina \\
+& História Obstétrica Anterior \\
+& Perdas Gestacionais \\
+& Fuma \\
+& Idade Gestacional 2 \\
+& Idade Gestacional Corrigida 2 \\
+& Peso Fetal \\
+& Medicação \\
+& Uso de Medicação \\
+& Outro Uso de Medicação \\
+& Maior Bolsão \\
+& Circunferência Abdominal \\
+& Percentil Circunferência Abdominal \\
+& Percentil Artéria Umbilical \\
+& Percentil Relação Cérebro–Placenta \\
+& Percentil Artéria \\
+& Percentil Peso \\
+& Data Provável do Parto 1º Trimestre \\
+& Doença Pré-Existente \\
+& Tipo de Doença Pré-Existente \\
+& Biometria Embrionária (dias) \\
+& Biometria Embrionária (semanas) \\
+\hline
+\end{tabularx}
+
+\end{table}
+
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{table}[H]
+\centering
+\caption{Variáveis do questionário de desfechos utilizadas no estudo}
+\small
+
+\begin{tabularx}{\textwidth}{
+  >{\RaggedRight\arraybackslash}p{3.2cm}
+  >{\RaggedRight\arraybackslash}X
+}
+\hline
+\textbf{Fonte} & \textbf{Variável} \\
+\hline
+
+Dados do questionário de desfechos &
+Paciente ID \\
+& Pré-eclâmpsia \\
+& Diabetes \\
+& Anemia \\
+& Hipotireoidismo \\
+& Outras Doenças \\
+& Medicamentos \\
+& Último Peso \\
+& Idade Gestacional \\
+& Tipo Parto \\
+& Data Nascimento \\
+& Peso Nascimento \\
+& Comprimento ao nascer \\
+& Perímetro Cefálico \\
+& Apgar 1 minuto \\
+& Apgar 5 minutos \\
+& Dias Hospital \\
+& Intercorrências \\
+& Tipo Diabetes \\
+& Primeiro Peso gravidez \\
+& Data Parto \\
+& Data Peso Cartão \\
+\hline
+\end{tabularx}
+
+\end{table}
+
+
+
+Devido ao desbalanceamento natural dos dados (menor frequência de casos de pré-eclâmpsia em relação aos controles), empregou-se a técnica de \textit{Synthetic Minority Over-sampling Technique} (SMOTE) para geração de amostras sintéticas da classe minoritária, seguida de uma etapa de \textit{data augmentation} numérica, na qual foi adicionado ruído gaussiano controlado às variáveis contínuas, respeitando os limites fisiológicos previamente definidos. O modelo de aprendizado de máquina escolhido foi o \textit{Light Gradient Boosting Machine} (LightGBM), configurado para classificação binária, utilizando \textit{early stopping} com base no desempenho no conjunto de validação. Os hiperparâmetros foram ajustados com foco em maximizar a sensibilidade (recall) para o desfecho de pré-eclâmpsia, mesmo ao custo de maior número de falsos positivos, em consonância com a priorização clínica de reduzir falhas na detecção de gestantes de alto risco.
+
+\section{Validação do modelo}
+
+A avaliação de desempenho do modelo foi conduzida de forma independente nos conjuntos de validação e teste, que não participaram do treinamento nem do balanceamento das classes. Para cada paciente, o modelo produziu probabilidades de ocorrência de pré-eclâmpsia, a partir das quais foram estimadas curvas \textit{Receiver Operating Characteristic} (ROC) e \textit{precision-recall}. A partir dessas curvas, foram calculadas métricas de desempenho, incluindo área sob a curva (AUC), acurácia, sensibilidade, especificidade, precisão, \textit{F1-score} e matriz de confusão, com ênfase na análise da sensibilidade em diferentes pontos de corte.
+
+Com base nessas análises, foi definido um limiar de decisão para a probabilidade de pré-eclâmpsia que equilibra adequadamente sensibilidade e especificidade, priorizando a identificação de gestantes em maior risco. Esse limiar foi discutido com a especialista em medicina fetal, considerando o impacto clínico da classificação de risco, o fluxo de atendimento da clínica e as recomendações de diretrizes nacionais sobre triagem e prevenção de pré-eclâmpsia. Adicionalmente, foram analisadas as importâncias das variáveis fornecidas pelo LightGBM, permitindo identificar quais atributos contribuíram de forma mais relevante para a predição e apoiar a interpretação clínica do modelo.
+
+\section{Desenvolvimento da API}
+
+Após a definição do modelo final e do limiar de decisão, o classificador LightGBM, juntamente com o conjunto de pré-processamento (funções de limpeza, codificação e normalização) e a lista ordenada de atributos, foi empacotado em artefatos serializados para uso em produção. Com base nesses artefatos, foi desenvolvida uma interface de programação de aplicações (API) em linguagem Python, responsável por expor serviços de predição por meio de requisições HTTP. A API foi implementada de forma a receber, em formato \textit{JSON}, os dados clínicos e ultrassonográficos necessários, aplicar o mesmo fluxo de pré-processamento descrito na etapa de preparação dos dados e, em seguida, invocar o modelo treinado para obter a probabilidade estimada de pré-eclâmpsia para cada gestante.
+
+A resposta da API inclui tanto a probabilidade contínua quanto a classificação binária de risco (alto ou baixo), baseada no limiar de decisão definido na etapa de validação. Opcionalmente, a API também pode fornecer informações agregadas sobre a importância relativa das variáveis, com o intuito de apoiar a interpretação do resultado pelo profissional de saúde. Toda a comunicação com o sistema de prontuário da clínica é realizada utilizando apenas o identificador interno do paciente, preservando a confidencialidade dos dados. Essa arquitetura permite integrar o modelo de predição ao fluxo de trabalho assistencial, oferecendo suporte à tomada de decisão em tempo quase real durante o atendimento.
+
+\section{Comparação com diagnósticos reais}
+
+Em ambiente de uso rotineiro, cada predição realizada pela API é armazenada em uma tabela específica, contendo o identificador da paciente, a data da predição, a probabilidade estimada de pré-eclâmpsia e a classificação de risco atribuída pelo modelo. Após o desfecho da gestação, os diagnósticos reais e os principais desfechos perinatais (como idade gestacional ao parto, peso ao nascimento, necessidade de internação e complicações associadas) são vinculados a essas predições, possibilitando a comparação sistemática entre as saídas do modelo e os resultados observados na prática clínica.
+
+Essa comparação contínua permite monitorar o desempenho do modelo ao longo do tempo, detectar eventuais degradações de acurácia decorrentes de mudanças no perfil da população atendida ou nos protocolos assistenciais e, quando necessário, planejar ciclos de re-treinamento com a incorporação de novos dados. Dessa forma, estabelece-se um ciclo de melhoria contínua, no qual os dados gerados na rotina assistencial alimentam sucessivas versões do modelo, garantindo que o sistema de apoio à decisão se mantenha atualizado e alinhado às evidências e diretrizes mais recentes sobre predição e prevenção da pré-eclâmpsia.
+
 
 
 
@@ -512,12 +759,17 @@ Os dados para treinamento do modelo serão baseados em dados clínicos e exames 
 \appendix
 \setcounter{chapter}{0}
 \renewcommand{\thechapter}{\Alph{chapter}}
-\chapter*{\hfill APÊNDICE A -- TÍTULO DO APÊNDICE \hfill}
+
+\chapter*{\hfill APÊNDICE A -- Protocolo da revisão de escopo \hfill}
 \stepcounter{chapter}
 \thispagestyle{myheadings}
 
-Conteúdo do Apêndice A...
+% Insere todas as páginas do PDF
+\includepdf[
+  pages=-,
+  pagecommand={}
+]{imagens/effectiveness_ml_predicting.pdf}
 
-Conteúdo do Apêndice A...
+
 
 \end{document}
