@@ -425,7 +425,7 @@ Demonstrando o potencial das tecnologias de IA na transformação do cuidado pr�
 
 Recente estudo chinês testou cinco algoritmos de classificação diferentes, Logistic Regression, Extra Trees Classifier, Voting Classifier, Gaussian Process Classifier e Stacking Classifier. O Stacking Classifier apresentou o melhor desempenho na previsão da pré-eclâmpsia prematura, com uma área sob a curva (AUC) de 0,884. no qual incorpora várias características maternas, como idade, altura, peso antes da gravidez e biomarcadores clínicos, como PAM, UTA-PI, PAPP-A e PLGF, utilizando da ferramenta SHAP (ShaPley Additive Explanations) para explicar as previsões do modelo e oferecer mais transparência do modelo, o que torna mais seguro a aplicação em contextos clínicos, porém ressalta a necessidade de validação desse método por considerar dados de apenas um único centro local\cite{Li2024}.
 
-Portanto, fica evidente a viabilidade e relevância do desenvolvimento de uma nova ferramenta preditiva para avaliação do risco de pré-eclâmpsia baseada em algoritmos de machine learning, utilizando dados clínicos específicos da nossa população. Essa abordagem personalizada tem o potencial de superar as limitações dos modelos atuais, especialmente no que se refere à taxa de falsos positivos e à acurácia em contextos locais, contribuindo significativamente para a tomada de decisão clínica mais precisa e eficaz e facilitar a implementação dessas ferramentas em diferentes realidades socioeconômicas. Diante deste cenário, construimos um modelo de ML, o Lightgbm, implementado em uma API REST para prever a PE, elegemos esse modelo após uma revisão sistematica da eficacia do machine learning na predição da PE no geral, e para a nossa realidade do tamanho da amostra que iremos trabalhar os algoritmos da familia do gradient boosting(GBM) se mostraram sempre acertivos e sem complexidade para o treinamento.
+Portanto, fica evidente a viabilidade e relevância do desenvolvimento de uma nova ferramenta preditiva para avaliação do risco de pré-eclâmpsia baseada em algoritmos de machine learning utilizando dados clínicos específicos da nossa população. Essa abordagem personalizada tem o potencial de superar as limitações dos modelos atuais, especialmente no que se refere à taxa de falsos positivos e à acurácia em contextos locais, contribuindo significativamente para a tomada de decisão clínica mais precisa e eficaz e facilitar a implementação dessas ferramentas em diferentes realidades socioeconômicas. Diante deste cenário, construimos um modelo de ML, o Lightgbm, acoplado e disponibilizado via API REST, elegemos esse modelo após uma revisão sistematica da eficacia do machine learning na predição da PE no geral, e para a nossa realidade do tamanho da amostra que iremos trabalhar os algoritmos da familia do gradient boosting(GBM) se mostraram sempre acertivos e sem complexidade para o treinamento.
 
 \setlength{\tabcolsep}{4pt} % diminui espaçamento lateral
 \renewcommand{\arraystretch}{1.25} % melhora leitura vertical
@@ -481,12 +481,13 @@ Li et al. (Stacking) \cite{Li2024}
 & --
 & Validação em centro único; uso de SHAP para explicabilidade. \\
 
-\textbf{Presente estudo (LightGBM)}
-& \textbf{25 variáveis clínicas/obstétricas (peso, IMC, Idade, diabetes, HAS, Doppler, comorbidades)}
-& \textbf{0,9669}
-& \textbf{0,91}
+\textbf{Presente estudo (PPML)}
+& \textbf{18 variáveis clínicas/obstétricas (idade, IMC, diabetes, HAS, peso gestacional, Doppler, etc.)}
+& \textbf{0,9711}
+& \textbf{0,93}
 & \textbf{0,955 (esp.) / FPR = 4,5\%}
-& \textbf{Amostra real local; API clínica leve e sem necessidade de exames laboratoriais.} \\
+& \textbf{Amostra real local (44 casos: 22 com e 22 sem PE); sem uso de biomarcadores.} \\
+
 
 \hline
 \end{tabularx}
@@ -502,73 +503,78 @@ Li et al. (Stacking) \cite{Li2024}
 
 Foi denominada PPML e desenvolvida em \textit{Python} 3.9+ utilizando \textit{FastAPI} como \textit{framework web} assíncrono, com validação automática de entrada via Pydantic e documentação OpenAPI/Swagger nativa. A comunicação ocorre via HTTP/HTTPS com payloads JSON, suportando deploy containerizado utilizando Uvicorn, e publicado no serviço de nuvem do \textit{Heroku}
 
-O modelo final implementado foi o LightGBM(LGBMClassifier) de Gradiente Boosting otimizado para classificação binária, por demonstrar resultados com mais precisão com o tamanho da amostra disponivel, treinado com 25 features clínicas/obstétricas(peso, idade, IMC, diabetes, hipertensão, percentis Doppler, comorbidades). Configurando com n\_estimators=500, learning\_rate=0.1, num\_leaves=31, max\_depth=6 e regularização (reg\_alpha/lambda=0.1), alcançou AUC-ROC 0.9669, precisão/recall/F1 0.9091 no conjunto de teste independente(22+22 casos), com early stopping em 800 iterações.
+O modelo final implementado foi o LightGBM (LGBMClassifier) de gradiente boosting otimizado para classificação binária, por demonstrar melhor desempenho com o tamanho de amostra disponível. Foi treinado com 18 variáveis clínicas: idade, IMC, diabetes, hipertensão, peso no primeiro trimestre, origem racial, histórico familiar de diabetes, tipo de diabetes, média do índice de pulsatilidade (IP), perdas gestacionais, peso, idade gestacional, idade gestacional corrigida, peso fetal, percentil da artéria uterina, percentil da artéria umbilical, percentil de peso fetal e circunferência abdominal. Configurado com n\_estimators=500, learning\_rate=0,1, num\_leaves=31, max\_depth=6 e regularização (reg\_alpha=0,1 e reg\_lambda=0,1), o modelo alcançou AUC-ROC de 0,9711 e acurácia de 0,9318, com precisão, recall e F1 de 0,93 no conjunto de teste independente (22 casos com e 22 sem pré-eclâmpsia).
+
+\begin{quadro}[H]
+\centering
+
+{\bfseries Quadro 1: Dados de entrada para predição}
+
+\vspace{2mm}
+
+\begin{tabular}{|l|}
+\hline
+Idade materna (anos) \\ \hline
+Índice de Massa Corporal – IMC \\ \hline
+Diabetes \\ \hline
+Hipertensão \\ \hline
+Peso no primeiro trimestre (kg) \\ \hline
+Origem racial \\ \hline
+Histórico familiar de diabetes \\ \hline
+Tipo de diabetes \\ \hline
+Índice de Pulsatilidade médio da Artéria Uterina (IP médio) \\ \hline
+Perdas gestacionais anteriores \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+\footnotesize
+Fonte: Adaptado de Fetal Medicine Foundation, 2025.
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+
+{\bfseries Quadro 2: Dados de entrada para predição (continuação)}
+
+\vspace{2mm}
+
+\begin{tabular}{|l|}
+\hline
+Peso materno atual (kg) \\ \hline
+Idade gestacional (semanas) \\ \hline
+Idade gestacional corrigida (semanas) \\ \hline
+Peso fetal estimado (g) \\ \hline
+Percentil da Artéria Uterina \\ \hline
+Percentil da Artéria Umbilical \\ \hline
+Percentil do peso fetal \\ \hline
+Circunferência abdominal(mm) \\ \hline
+\end{tabular}
+
+\end{quadro}
+
 
 Também foi desenvolvido e avaliado um modelo baseado em Rede Neural para classificação binária, treinado com as mesmas 25 variáveis clínicas e obstétricas, utilizando normalização dos dados e balanceamento por oversampling. Entretanto, com o tamanho limitado da amostra disponível, o modelo apresentou capacidade discriminatória inferior à do método de Gradiente Boosting. A avaliação no conjunto de teste mostrou AUC-ROC = 0.6548, indicando baixo poder de separação entre os desfechos. A análise por diferentes limiares de decisão evidenciou desempenho instável, com destaque para o melhor ponto em threshold = 0.20, no qual foram obtidos precision = 0.292, recall = 1.000 e F1-score = 0.452. Em limiares mais conservadores, observou-se queda acentuada da sensibilidade, como em threshold = 0.40, com precision = 0.250, recall = 0.429 e F1-score = 0.316, e em threshold = 0.50, com precision = 0.500, recall = 0.286 e F1-score = 0.364. Esses resultados demonstram que, apesar da alta sensibilidade obtida em limiares baixos, a rede neural apresentou elevado número de falsos positivos e desempenho global insatisfatório para aplicação clínica isolada, reforçando a superioridade do modelo baseados em \textit{Gradient Boosting} para o contexto estudado.
 
 O pré-processamento do modelo implementado segue pipeline customizada com pandas (manipulação), \textit{scikit-learn}, \textit{StandardScaler} (normalização), mapeamentos categóricos (raça: Branco=1/Pardo=2/Preto=3; histórico diabetes), extração de comorbidades via \textit{regex} de acordo com as entradas categorizadas, preenchimento NaN (0/moda), e garantia de 25 features fixas.
 
-O treinamento incorporou SMOTE (balanceamento 15.9\%→50\% positivos), GroupShuffleSplit por paciente para evitar data leakage, data augmentation gaussiana, onde aumentamos +40\% nas features contínuas e splits estratificados, separando para treino um total de 72\%, validação 13\%, teste 15\%. Avaliação incluiu ROC-AUC, matriz confusão, curvas aprendizado e SHAP-like feature importance, onde no top 3: peso, diabetes, idade).
+O treinamento incorporou SMOTE (balanceamento 15.9\%→50\% positivos), GroupShuffleSplit por paciente para evitar data leakage, data augmentation gaussiana, onde aumentamos +40\% nas features contínuas e splits estratificados, separando para treino um total de 72\%, validação 13\%, teste 15\%. Avaliação incluiu ROC-AUC, matriz confusão, curvas aprendizado e SHAP-like feature importance, onde no top 5 estão, peso, idade gestacional, diabetes, idade e hipertensão.
 
-Endpoints expõem predict\_lgbm (probabilidade + classificação risco),health (status modelos) e features (esquema entrada), com threshold 0.5 para alto/baixo risco e tratamento robusto de exceções. disponibilizaremos o serviço através de um servidor Linux de alta disponibilidade, hospedado no Heroku, uma plataforma em nuvem de baixo custo, podendo também ser utilizado como ambiente de treinamento e teste dos modelos.
+A api possui um endpoint que oferece a predição, denominado predict\_lgbm, os demais são apenas para verificação das variaveis e da disponibilidade da api, onde retorna com a probabilidade e e uma classificação de alto ou baixo risco, considerando com threshold 0.5 para alto/baixo risco.
 
-\begin{quadro}[H]
-\centering
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/swagger.png}
+    \caption{Fonte: Heroku, 2025.}
+\end{figure}
 
-{\bfseries Quadro 1: Dados de entrada para predição (continua)}
 
-\vspace{2mm}
+disponibilizamos o serviço através de um servidor Linux de alta disponibilidade, hospedado no Heroku, uma plataforma em nuvem de baixo custo, utilizando o GitHub para deploy e integração com a plataforma para a pipeline de integração.
 
-\begin{tabular}{|l|}
-\hline
-Peso (kg) \\ \hline
-Idade \\ \hline
-Índice de Massa Corporal (IMC) \\ \hline
-Diabetes \\ \hline
-Hipertensão \\ \hline
-Peso no primeiro trimestre \\ \hline
-Origem racial \\ \hline
-Histórico familiar de diabetes \\ \hline
-Índice de pulsatilidade médio da artéria uterina (IP médio) \\ \hline
-História obstétrica anterior \\ \hline
-Perdas gestacionais \\ \hline
-Tabagismo durante a gravidez \\ \hline
-Idade gestacional \\ \hline
-Idade gestacional corrigida \\ \hline
-Peso fetal \\ \hline
-Percentil da artéria uterina \\ \hline
-Percentil do peso fetal \\ \hline
-\end{tabular}
-
-\vspace{2mm}
-\footnotesize
-Fonte: Adaptado de Fetal Medicine Foundation, 2025.
-\end{quadro}
-
-\begin{quadro}[H]
-\centering
-
-{\bfseries Quadro 1: Dados de entrada para predição (continuação)}
-
-\vspace{2mm}
-
-\begin{tabular}{|l|}
-\hline
-Hipertensão pré-existente \\ \hline
-Endometriose \\ \hline
-Hipotireoidismo \\ \hline
-Doença inflamatória intestinal (IIC) \\ \hline
-Trombofilia \\ \hline
-Retocolite \\ \hline
-Gastrite \\ \hline
-Outras doenças associadas \\ \hline
-\end{tabular}
-
-\vspace{2mm}
-\footnotesize
-Fonte: Adaptado de Fetal Medicine Foundation, 2025.
-\end{quadro}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/heroku.png}
+    \caption{Fonte: Heroku, 2025.}
+\end{figure}
 
 O projeto foi organizado em pastas funcionais básicas para facilitar manutenção e desenvolvimento ágil, no qual a pasta API contém os endpoints RESTful, gerenciando recebimento e validação dos dados e respostas. já a pasta DATA armazena a planilha utilizada para o treinamento e para alimentar o modelo. A pasta MODELS armazena o modelo treinado, o LightGBM serializado, e scripts para carregamento e inferência. a pasta NOTEBOOKS é usada para experimentação, treinamento, avaliação e geração dos modelos, incluindo análise exploratória e métricas. A organização do codigo foi pensada para seguir uma organização simples, seguindo os principios do Clean code, garantindo separação das responsabilidades e modularidade.
 
@@ -603,13 +609,15 @@ Essa etapa permitiu definir quais tipos de exames ultrassonográficos seriam con
 
 \section{Preparação dos dados e validação}
 
-Após a etapa exploratória, os dados clínicos e ultrassonográficos foram exportados dos sistemas da clínica e unificados em uma única planilha, na qual as diferentes tabelas foram integradas por meio do campo \textit{PacienteId}. A preparação dos dados envolveu a conversão explícita dos tipos de variáveis (por exemplo, datas, números inteiros e reais), a padronização de categorias textuais (como cor/raça, histórico familiar de diabetes e presença de comorbidades) e o cálculo da idade materna a partir da data de nascimento e de uma data de referência consistente para cada paciente. Valores ausentes foram tratados com regras específicas: uso da moda para variáveis categóricas, substituição por zero para variáveis que representam ausência de condição clínica e utilização de valores de referência quando não foi possível inferir a informação a partir dos registros.
+Após a aprovação do Comitê de Ética, os dados clínicos e ultrassonográficos foram exportados dos sistemas da clínica e unificados em uma única planilha, na qual as diferentes tabelas foram integradas por meio do campo \textit{PacienteId}. A preparação dos dados foi aplicada diretamente na pipeline da ML, no qual realizamos a conversão explícita dos tipos de variáveis, datas, números inteiros e reais. A padronização de categorias textuais como cor/raça, histórico familiar de diabetes, e o cálculo da idade materna a partir da data de nascimento e de uma data de referência consistente para cada paciente. Valores ausentes foram tratados com regras específicas: uso da moda para variáveis categóricas, substituição por zero para variáveis que representam ausência de condição clínica e utilização de valores de referência quando não foi possível inferir a informação a partir dos registros.
 
-Além disso, foram aplicados limites fisiologicamente plausíveis às variáveis contínuas, com o objetivo de mitigar o impacto de erros de digitação sem descartar registros inteiros (por exemplo, restringindo a idade materna a um intervalo entre 15 e 50 anos, peso entre 40 e 150 kg, IMC entre 15 e 50, e peso fetal máximo de 5\,000 g). A partir de textos livres sobre antecedentes clínicos, foram criadas variáveis binárias indicadoras de condições específicas, como hipertensão pré-existente, trombofilia, endometriose, doenças tireoidianas e outras comorbidades relevantes. A versão final do conjunto de dados pré-processado foi submetida à validação de uma especialista em medicina fetal, que avaliou a coerência das decisões de codificação, inclusão e exclusão de variáveis, bem como dos limites adotados, à luz do conhecimento clínico atual sobre fatores de risco para pré-eclâmpsia.
+Além disso, foram aplicados limites fisiologicamente plausíveis às variáveis contínuas, com o objetivo reduzir outliers e mitigar o impacto de erros de digitação sem descartar registros inteiros (por exemplo, restringindo a idade materna a um intervalo entre 15 e 50 anos, peso entre 40 e 150 kg, IMC entre 15 e 50, e peso fetal máximo de 5\,000 g). A partir de textos livres sobre antecedentes clínicos, foram criadas variáveis binárias indicadoras de condições específicas, como hipertensão pré-existente e historico familiar de diabetes. A versão final do conjunto de dados pré-processado foi submetida à validação de uma especialista em medicina fetal, que avaliou a coerência das decisões de codificação, inclusão e exclusão de variáveis, bem como dos limites adotados, para que corresponda ao conhecimento clínico atual sobre fatores de risco para pré-eclâmpsia.
 
 \section{Treinamento do modelo}
 
 Concluída a preparação dos dados, procedeu-se à definição da variável alvo (\textit{PreEclampsia}) e do conjunto de atributos de entrada, compostos por variáveis clínicas e ultrassonográficas selecionadas na etapa anterior. Para evitar vazamento de informação entre conjuntos de treino e teste, foi adotada uma estratégia de divisão baseada em grupos, garantindo que todos os registros de uma mesma gestante permanecessem em apenas um dos conjuntos. Em seguida, foram construídos os conjuntos de treino, validação e teste, com estratificação em relação ao desfecho para preservar a proporção de casos de pré-eclâmpsia em cada partição.
+
+Foram utilizados todos os dados da planilha exportada para uma primeira verificação, onde se observou que algumas variaveis logo após o treinamento tinha nenhuma importancia final a predição, portanto foram sendo excluidas ao passo que iam sendo identificadas.
 
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.25}
@@ -723,7 +731,19 @@ Devido ao desbalanceamento natural dos dados (menor frequência de casos de pré
 
 \section{Validação do modelo}
 
-A avaliação de desempenho do modelo foi conduzida de forma independente nos conjuntos de validação e teste, que não participaram do treinamento nem do balanceamento das classes. Para cada paciente, o modelo produziu probabilidades de ocorrência de pré-eclâmpsia, a partir das quais foram estimadas curvas \textit{Receiver Operating Characteristic} (ROC) e \textit{precision-recall}. A partir dessas curvas, foram calculadas métricas de desempenho, incluindo área sob a curva (AUC), acurácia, sensibilidade, especificidade, precisão, \textit{F1-score} e matriz de confusão, com ênfase na análise da sensibilidade em diferentes pontos de corte.
+A avaliação de desempenho do modelo foi conduzida de forma independente nos conjuntos de validação e teste, que não participaram do treinamento nem do balanceamento das classes, sendo o conjunto de teste composto por 44 pacientes, dos quais 22 apresentaram pré-eclâmpsia e 22 não tiveram o desfecho. Para cada paciente, o modelo produziu probabilidades de ocorrência de pré-eclâmpsia, a partir das quais foram estimadas as curvas \textit{Receiver Operating Characteristic} (ROC) e \textit{precision-recall}. A partir dessas curvas, foram calculadas métricas de desempenho, incluindo área sob a curva (AUC), acurácia, sensibilidade, especificidade, precisão, \textit{F1-score} e matriz de confusão, com ênfase na análise da sensibilidade em diferentes pontos de corte.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/probabilidades_matriz_confusao.png}
+    \caption{Fonte: Autor, 2025.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/avaliacao_lightgbm.png}
+    \caption{Fonte: Autor, 2025.}
+\end{figure}
 
 Com base nessas análises, foi definido um limiar de decisão para a probabilidade de pré-eclâmpsia que equilibra adequadamente sensibilidade e especificidade, priorizando a identificação de gestantes em maior risco. Esse limiar foi discutido com a especialista em medicina fetal, considerando o impacto clínico da classificação de risco, o fluxo de atendimento da clínica e as recomendações de diretrizes nacionais sobre triagem e prevenção de pré-eclâmpsia. Adicionalmente, foram analisadas as importâncias das variáveis fornecidas pelo LightGBM, permitindo identificar quais atributos contribuíram de forma mais relevante para a predição e apoiar a interpretação clínica do modelo.
 
@@ -731,7 +751,29 @@ Com base nessas análises, foi definido um limiar de decisão para a probabilida
 
 Após a definição do modelo final e do limiar de decisão, o classificador LightGBM, juntamente com o conjunto de pré-processamento (funções de limpeza, codificação e normalização) e a lista ordenada de atributos, foi empacotado em artefatos serializados para uso em produção. Com base nesses artefatos, foi desenvolvida uma interface de programação de aplicações (API) em linguagem Python, responsável por expor serviços de predição por meio de requisições HTTP. A API foi implementada de forma a receber, em formato \textit{JSON}, os dados clínicos e ultrassonográficos necessários, aplicar o mesmo fluxo de pré-processamento descrito na etapa de preparação dos dados e, em seguida, invocar o modelo treinado para obter a probabilidade estimada de pré-eclâmpsia para cada gestante.
 
-A resposta da API inclui tanto a probabilidade contínua quanto a classificação binária de risco (alto ou baixo), baseada no limiar de decisão definido na etapa de validação. Opcionalmente, a API também pode fornecer informações agregadas sobre a importância relativa das variáveis, com o intuito de apoiar a interpretação do resultado pelo profissional de saúde. Toda a comunicação com o sistema de prontuário da clínica é realizada utilizando apenas o identificador interno do paciente, preservando a confidencialidade dos dados. Essa arquitetura permite integrar o modelo de predição ao fluxo de trabalho assistencial, oferecendo suporte à tomada de decisão em tempo quase real durante o atendimento.
+A resposta da API inclui tanto a probabilidade contínua quanto a classificação binária de risco (alto ou baixo), baseada no limiar de decisão definido na etapa de validação. 
+
+\begin{quadro}[H]
+\centering
+
+{\bfseries Quadro 2: Resultado da predição de risco de pré-eclâmpsia}
+
+\vspace{2mm}
+
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Parâmetro} & \textbf{Valor} \\ \hline
+Sucesso da predição & Verdadeiro \\ \hline
+Probabilidade de pré-eclâmpsia & 0,31 \\ \hline
+Classificação de risco & Baixo \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+\footnotesize
+Fonte: Resultado da aplicação do modelo de Machine Learning, 2025.
+\end{quadro}
+
+Essa arquitetura permite integrar o modelo de predição ao fluxo de trabalho assistencial, oferecendo suporte à tomada de decisão em tempo quase real durante o atendimento.
 
 \section{Comparação com diagnósticos reais}
 
@@ -769,7 +811,5 @@ Essa comparação contínua permite monitorar o desempenho do modelo ao longo do
   pages=-,
   pagecommand={}
 ]{imagens/effectiveness_ml_predicting.pdf}
-
-
 
 \end{document}
