@@ -106,6 +106,63 @@
       \field{title}{Hypertension in Pregnancy}
       \field{year}{2020}
     \endentry
+    \entry{Araujo2024}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=79d885844974cd4de8fbe5f2e0077ff3}{%
+           family={Araújo},
+           familyi={A\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aab4e92844842d00eb57d6793bb6fb48}{%
+           family={Macedo},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=179752b68d10dcd248fcc76dffb68c72}{%
+           family={Veloso},
+           familyi={V\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aa464eeca918ac92c58e3b9b4ccd49c6}
+      \strng{fullhash}{aa464eeca918ac92c58e3b9b4ccd49c6}
+      \strng{fullhashraw}{aa464eeca918ac92c58e3b9b4ccd49c6}
+      \strng{bibnamehash}{aa464eeca918ac92c58e3b9b4ccd49c6}
+      \strng{authorbibnamehash}{aa464eeca918ac92c58e3b9b4ccd49c6}
+      \strng{authornamehash}{aa464eeca918ac92c58e3b9b4ccd49c6}
+      \strng{authorfullhash}{aa464eeca918ac92c58e3b9b4ccd49c6}
+      \strng{authorfullhashraw}{aa464eeca918ac92c58e3b9b4ccd49c6}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC Pregnancy and Childbirth}
+      \field{number}{1}
+      \field{title}{Complete blood count as a biomarker for preeclampsia with severe features diagnosis: a machine learning approach}
+      \field{volume}{24}
+      \field{year}{2024}
+      \field{pages}{628}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12884-024-06821-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s12884-024-06821-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s12884-024-06821-4
+      \endverb
+    \endentry
     \entry{Artzi2020}{article}{}{}
       \name{author}{10}{}{%
         {{un=0,uniquepart=base,hash=24b705bf37d78a42c4c56f76e0647139}{%

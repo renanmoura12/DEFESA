@@ -503,61 +503,36 @@ Li et al. (Stacking) \cite{Li2024}
 
 Foi denominada PPML e desenvolvida em \textit{Python} 3.9+ utilizando \textit{FastAPI} como \textit{framework web} assíncrono, com validação automática de entrada via Pydantic e documentação OpenAPI/Swagger nativa. A comunicação ocorre via HTTP/HTTPS com payloads JSON, suportando deploy containerizado utilizando Uvicorn, e publicado no serviço de nuvem do \textit{Heroku}
 
-O modelo final implementado foi o LightGBM (LGBMClassifier) de gradiente boosting otimizado para classificação binária, por demonstrar melhor desempenho com o tamanho de amostra disponível. Foi treinado com 18 variáveis clínicas: idade, IMC, diabetes, hipertensão, peso no primeiro trimestre, origem racial, histórico familiar de diabetes, tipo de diabetes, média do índice de pulsatilidade (IP), perdas gestacionais, peso, idade gestacional, idade gestacional corrigida, peso fetal, percentil da artéria uterina, percentil da artéria umbilical, percentil de peso fetal e circunferência abdominal. Configurado com n\_estimators=500, learning\_rate=0,1, num\_leaves=31, max\_depth=6 e regularização (reg\_alpha=0,1 e reg\_lambda=0,1), o modelo alcançou AUC-ROC de 0,9711 e acurácia de 0,9318, com precisão, recall e F1 de 0,93 no conjunto de teste independente (22 casos com e 22 sem pré-eclâmpsia).
+O modelo final implementado foi o LightGBM (\texttt{LGBMClassifier}) de gradiente boosting,
+otimizado para classificação binária, por demonstrar melhor desempenho com o tamanho de
+amostra disponível. Foi treinado com 17 variáveis clínicas: idade, IMC, diabetes,
+hipertensão, origem racial, histórico familiar de diabetes, tipo de diabetes, média do
+índice de pulsatilidade (IP), perdas gestacionais, peso, idade gestacional, idade
+gestacional corrigida, peso fetal, percentil da artéria uterina, percentil da artéria
+umbilical, percentil de peso fetal e circunferência abdominal.
 
-\begin{quadro}[H]
-\centering
+Foram desenvolvidas três versões do algoritmo. A primeira considerou apenas os tratamentos
+nos dados originais, com data augmentation gaussiana (+40\% nas variáveis contínuas) e
+SMOTE (balanceamento de 15.9\% para 50\% positivos), utilizando \texttt{GroupShuffleSplit}
+por paciente para evitar data leakage e splits estratificados, com 72\% para treino,
+13\% para validação e 15\% para teste. Esse modelo alcançou AUC-ROC de 0.9711 e acurácia
+de 0.9318, com precisão de 0.9524, recall de 0.9091 e F1-score de 0.9302 no conjunto de
+teste independente.
 
-{\bfseries Quadro 1: Dados de entrada para predição}
+O segundo modelo não utilizou data augmentation e apresentou AUC-ROC de 0.8356 e
+acurácia de 0.8000, com precisão de 0.6316, recall de 0.9500 e F1-score de 0.7059. O
+terceiro diferiu do primeiro no tratamento dos dados, considerando o peso materno com
+subtração do peso fetal e separação de pacientes por gestações. Esse modelo alcançou
+AUC-ROC de 0.9886 e acurácia de 0.9286, com precisão de 0.9048, recall de 0.9500 e
+F1-score de 0.93, sendo escolhido como modelo final.
 
-\vspace{2mm}
+A avaliação incluiu ROC-AUC, matriz de confusão, curvas de aprendizado e importância das
+variáveis baseada em SHAP, destacando como top 5: peso, idade gestacional, diabetes,
+idade e hipertensão. O modelo final foi configurado com \texttt{}.
 
-\begin{tabular}{|l|}
-\hline
-Idade materna (anos) \\ \hline
-Índice de Massa Corporal – IMC \\ \hline
-Diabetes \\ \hline
-Hipertensão \\ \hline
-Peso no primeiro trimestre (kg) \\ \hline
-Origem racial \\ \hline
-Histórico familiar de diabetes \\ \hline
-Tipo de diabetes \\ \hline
-Índice de Pulsatilidade médio da Artéria Uterina (IP médio) \\ \hline
-Perdas gestacionais anteriores \\ \hline
-\end{tabular}
-
-\vspace{2mm}
-\footnotesize
-Fonte: Adaptado de Fetal Medicine Foundation, 2025.
-\end{quadro}
-
-\begin{quadro}[H]
-\centering
-
-{\bfseries Quadro 2: Dados de entrada para predição (continuação)}
-
-\vspace{2mm}
-
-\begin{tabular}{|l|}
-\hline
-Peso materno atual (kg) \\ \hline
-Idade gestacional (semanas) \\ \hline
-Idade gestacional corrigida (semanas) \\ \hline
-Peso fetal estimado (g) \\ \hline
-Percentil da Artéria Uterina \\ \hline
-Percentil da Artéria Umbilical \\ \hline
-Percentil do peso fetal \\ \hline
-Circunferência abdominal(mm) \\ \hline
-\end{tabular}
-
-\end{quadro}
-
-
-Também foi desenvolvido e avaliado um modelo baseado em Rede Neural para classificação binária, treinado com as mesmas 25 variáveis clínicas e obstétricas, utilizando normalização dos dados e balanceamento por oversampling. Entretanto, com o tamanho limitado da amostra disponível, o modelo apresentou capacidade discriminatória inferior à do método de Gradiente Boosting. A avaliação no conjunto de teste mostrou AUC-ROC = 0.6548, indicando baixo poder de separação entre os desfechos. A análise por diferentes limiares de decisão evidenciou desempenho instável, com destaque para o melhor ponto em threshold = 0.20, no qual foram obtidos precision = 0.292, recall = 1.000 e F1-score = 0.452. Em limiares mais conservadores, observou-se queda acentuada da sensibilidade, como em threshold = 0.40, com precision = 0.250, recall = 0.429 e F1-score = 0.316, e em threshold = 0.50, com precision = 0.500, recall = 0.286 e F1-score = 0.364. Esses resultados demonstram que, apesar da alta sensibilidade obtida em limiares baixos, a rede neural apresentou elevado número de falsos positivos e desempenho global insatisfatório para aplicação clínica isolada, reforçando a superioridade do modelo baseados em \textit{Gradient Boosting} para o contexto estudado.
+Também foi desenvolvido e avaliado um modelo baseado em Rede Neural para classificação binária, treinado com as mesmas 25 variáveis clínicas de obstétricas, utilizando normalização dos dados e balanceamento por oversampling. Entretanto, com o tamanho limitado da amostra disponível, o modelo apresentou capacidade discriminatória inferior à do método de Gradiente Boosting. A avaliação no conjunto de teste mostrou AUC-ROC = 0.6548, indicando baixo poder de separação entre os desfechos. A análise por diferentes limiares de decisão evidenciou desempenho instável, com destaque para o melhor ponto em threshold = 0.20, no qual foram obtidos precision = 0.292, recall = 1.000 e F1-score = 0.452. Em limiares mais conservadores, observou-se queda acentuada da sensibilidade, como em threshold = 0.40, com precision = 0.250, recall = 0.429 e F1-score = 0.316, e em threshold = 0.50, com precision = 0.500, recall = 0.286 e F1-score = 0.364. Esses resultados demonstram que, apesar da alta sensibilidade obtida em limiares baixos, a rede neural apresentou elevado número de falsos positivos e desempenho global insatisfatório para aplicação clínica isolada, reforçando a superioridade do modelo baseados em \textit{Gradient Boosting} para o contexto estudado.
 
 O pré-processamento do modelo implementado segue pipeline customizada com pandas (manipulação), \textit{scikit-learn}, \textit{StandardScaler} (normalização), mapeamentos categóricos (raça: Branco=1/Pardo=2/Preto=3; histórico diabetes), extração de comorbidades via \textit{regex} de acordo com as entradas categorizadas, preenchimento NaN (0/moda), e garantia de 25 features fixas.
-
-O treinamento incorporou SMOTE (balanceamento 15.9\%→50\% positivos), GroupShuffleSplit por paciente para evitar data leakage, data augmentation gaussiana, onde aumentamos +40\% nas features contínuas e splits estratificados, separando para treino um total de 72\%, validação 13\%, teste 15\%. Avaliação incluiu ROC-AUC, matriz confusão, curvas aprendizado e SHAP-like feature importance, onde no top 5 estão, peso, idade gestacional, diabetes, idade e hipertensão.
 
 A api possui um endpoint que oferece a predição, denominado predict\_lgbm, os demais são apenas para verificação das variaveis e da disponibilidade da api, onde retorna com a probabilidade e e uma classificação de alto ou baixo risco, considerando com threshold 0.5 para alto/baixo risco.
 
@@ -597,19 +572,19 @@ A metodologia do desenvolvimento da PPML seguirá o processo de pipeline de Mach
 
 \section{Análise dos dados}
 
-Os dados utilizados neste estudo são provenientes do banco de dados relacional da clínica privada EMBRION, composto por laudos ultrassonográficos e informações clínicas de gestantes atendidas na instituição. Cada registro é associado a um identificador único de paciente (\textit{PacienteId}), não havendo acesso a informações diretamente identificáveis, o que garante a confidencialidade das participantes. Inicialmente, foi realizada uma análise exploratória para quantificar o número de pacientes e exames disponíveis, caracterizar a distribuição do desfecho de pré-eclâmpsia e inspecionar a presença de valores ausentes, inconsistências em datas (por exemplo, datas fora do intervalo gestacional plausível) e possíveis erros de digitação em variáveis contínuas, como peso, índice de massa corporal (IMC) e medidas fetais.
+Os dados utilizados neste estudo são provenientes do banco de dados relacional da clínica privada, composto por laudos ultrassonográficos e informações clínicas de gestantes atendidas na instituição. Cada registro é associado a um identificador único de paciente (\textit{PacienteId}), não havendo acesso a informações diretamente identificáveis, o que garante a confidencialidade das participantes. Inicialmente, foi realizada uma análise exploratória para quantificar o número de pacientes e exames disponíveis, caracterizar a distribuição do desfecho de pré-eclâmpsia e inspecionar a presença de valores ausentes, inconsistências em datas e possíveis erros de digitação em variáveis contínuas, como peso, índice de massa corporal (IMC) e medidas fetais, para com isso podermos realizar o tratamento via código no momento da criação do algoritimo para leitura dos dados.
 
-Essa etapa permitiu definir quais tipos de exames ultrassonográficos seriam considerados (como obstétrico simples, obstétrico com Doppler e translucência nucal), bem como avaliar a viabilidade de aproveitar múltiplos exames por gestante ao longo da gestação. Também foram identificadas as principais variáveis clínicas de interesse, tais como idade materna, presença de diabetes e hipertensão, histórico obstétrico e tabagismo, de modo a orientar as etapas subsequentes de preparação dos dados e seleção de atributos.
+Essa etapa permitiu definir quais exames ultrassonográficos seriam considerados na exportação final. Foram eles, o obstétrico simples, obstétrico com Doppler e translucência nucal, eles permitem avaliar o acompanhento total por gestante ao longo de gestações. Também foram identificadas as principais variáveis clínicas de interesse, tais como idade materna, presença de diabetes e hipertensão, histórico obstétrico e tabagismo, de modo a orientar as etapas subsequentes de preparação dos dados e seleção de atributos.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/diagrama_embrion.png}
-    \caption{Fonte: Fetal Medicine Foundation, 2025.}
+    \caption{Fonte: Autor, 2025.}
 \end{figure}
 
 \section{Preparação dos dados e validação}
 
-Após a aprovação do Comitê de Ética, os dados clínicos e ultrassonográficos foram exportados dos sistemas da clínica e unificados em uma única planilha, na qual as diferentes tabelas foram integradas por meio do campo \textit{PacienteId}. A preparação dos dados foi aplicada diretamente na pipeline da ML, no qual realizamos a conversão explícita dos tipos de variáveis, datas, números inteiros e reais. A padronização de categorias textuais como cor/raça, histórico familiar de diabetes, e o cálculo da idade materna a partir da data de nascimento e de uma data de referência consistente para cada paciente. Valores ausentes foram tratados com regras específicas: uso da moda para variáveis categóricas, substituição por zero para variáveis que representam ausência de condição clínica e utilização de valores de referência quando não foi possível inferir a informação a partir dos registros.
+Após a aprovação do Comitê de Ética, os dados clínicos e ultrassonográficos foram exportados atraves de uma aplicação feita em c\#, onde a unica função era acessar o banco de dados disponivel e unificar os dados disponiveis nos exames citados acima, em uma única planilha, na qual as diferentes tabelas foram integradas por meio do campo \textit{PacienteId}. A preparação dos dados foi aplicada diretamente na pipeline da ML, no qual realizamos a conversão explícita dos tipos de variáveis, datas, números inteiros e reais. A padronização de categorias textuais como cor/raça, histórico familiar de diabetes, e o cálculo da idade materna a partir da data de nascimento e de uma data de referência consistente para cada paciente. Uma versão também foi desenvolvida aplicando duas regras a mais, a primeira seria na variavel peso(peso da mãe), onde foi subtraido a variavel pesoFetal(peso do feto), a segunda é a separação por gestação do mesmo paciente, ou seja se tiver dados acima de nove(9) meses, realizamos a separação por esse intervalo. Valores ausentes foram tratados com regras específicas: uso da moda para variáveis categóricas, substituição por zero para variáveis que representam ausência de condição clínica e utilização de valores de referência quando não foi possível inferir a informação a partir dos registros.
 
 Além disso, foram aplicados limites fisiologicamente plausíveis às variáveis contínuas, com o objetivo reduzir outliers e mitigar o impacto de erros de digitação sem descartar registros inteiros (por exemplo, restringindo a idade materna a um intervalo entre 15 e 50 anos, peso entre 40 e 150 kg, IMC entre 15 e 50, e peso fetal máximo de 5\,000 g). A partir de textos livres sobre antecedentes clínicos, foram criadas variáveis binárias indicadoras de condições específicas, como hipertensão pré-existente e historico familiar de diabetes. A versão final do conjunto de dados pré-processado foi submetida à validação de uma especialista em medicina fetal, que avaliou a coerência das decisões de codificação, inclusão e exclusão de variáveis, bem como dos limites adotados, para que corresponda ao conhecimento clínico atual sobre fatores de risco para pré-eclâmpsia.
 
@@ -624,7 +599,7 @@ Foram utilizados todos os dados da planilha exportada para uma primeira verifica
 
 \begin{table}[H]
 \centering
-\caption{Variáveis maternas e ultrassonográficas utilizadas no estudo.}
+\caption{Variáveis maternas e ultrassonográficas disponiveis.}
 \small
 
 \begin{tabularx}{\textwidth}{
@@ -645,7 +620,6 @@ Paciente ID \\
 & Hipertensão \\
 & Data de Nascimento \\
 & Data Provável do Parto \\
-& Peso Primeiro Trimestre \\
 & Origem Racial \\
 & Histórico Familiar de Diabetes \\
 & Risco Trissomia 21 \\
@@ -658,8 +632,8 @@ Paciente ID \\
 & História Obstétrica Anterior \\
 & Perdas Gestacionais \\
 & Fuma \\
-& Idade Gestacional 2 \\
-& Idade Gestacional Corrigida 2 \\
+& Idade Gestacional \\
+& Idade Gestacional Corrigida \\
 & Peso Fetal \\
 & Medicação \\
 & Uso de Medicação \\
@@ -686,7 +660,7 @@ Paciente ID \\
 
 \begin{table}[H]
 \centering
-\caption{Variáveis do questionário de desfechos utilizadas no estudo}
+\caption{Variáveis do questionário de desfechos disponiveis}
 \small
 
 \begin{tabularx}{\textwidth}{
@@ -725,13 +699,49 @@ Paciente ID \\
 
 \end{table}
 
+Ao final foram somente utilizadas variaveis que ao decorrer do estudo demonstraram alguma importancia, para essa classificação interna foi utilizado a tecnica SHAP-like feature importance. Testes corridos de treinamento e validação interna foram conduzidos para eleger as que realmente estavam impactando para a predição final, as que ficaram como classificação zerada, foram retiradas. O motivo dessa baixa importancia somente nessas variaveis se deu pela baixa quantidade de ocorrencias daquele dado, portanto não tinha como estabelecer dados ficticios e entrava em desuso, portanto foi excluida. 
 
+\begin{quadro}[H]
+\centering
+
+{\bfseries Quadro 1: Dados de treinamento final e entrada para predição}
+
+\vspace{2mm}
+
+\begin{tabular}{|l|}
+\hline
+Idade materna (anos) \\ \hline
+Índice de Massa Corporal – IMC \\ \hline
+Diabetes \\ \hline
+Hipertensão \\ \hline
+Peso no primeiro trimestre (kg) \\ \hline
+Origem racial \\ \hline
+Histórico familiar de diabetes \\ \hline
+Tipo de diabetes \\ \hline
+Índice de Pulsatilidade médio da Artéria Uterina (IP médio) \\ \hline
+Perdas gestacionais anteriores \\ \hline
+Peso materno atual (kg) \\ \hline
+Idade gestacional (semanas) \\ \hline
+Idade gestacional corrigida (semanas) \\ \hline
+Peso fetal estimado (g) \\ \hline
+Percentil da Artéria Uterina \\ \hline
+Percentil da Artéria Umbilical \\ \hline
+Percentil do peso fetal \\ \hline
+Circunferência abdominal(mm) \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+\footnotesize
+Fonte: Adaptado de Fetal Medicine Foundation, 2025.
+\end{quadro}
 
 Devido ao desbalanceamento natural dos dados (menor frequência de casos de pré-eclâmpsia em relação aos controles), empregou-se a técnica de \textit{Synthetic Minority Over-sampling Technique} (SMOTE) para geração de amostras sintéticas da classe minoritária, seguida de uma etapa de \textit{data augmentation} numérica, na qual foi adicionado ruído gaussiano controlado às variáveis contínuas, respeitando os limites fisiológicos previamente definidos. O modelo de aprendizado de máquina escolhido foi o \textit{Light Gradient Boosting Machine} (LightGBM), configurado para classificação binária, utilizando \textit{early stopping} com base no desempenho no conjunto de validação. Os hiperparâmetros foram ajustados com foco em maximizar a sensibilidade (recall) para o desfecho de pré-eclâmpsia, mesmo ao custo de maior número de falsos positivos, em consonância com a priorização clínica de reduzir falhas na detecção de gestantes de alto risco.
 
 \section{Validação do modelo}
 
 A avaliação de desempenho do modelo foi conduzida de forma independente nos conjuntos de validação e teste, que não participaram do treinamento nem do balanceamento das classes, sendo o conjunto de teste composto por 44 pacientes, dos quais 22 apresentaram pré-eclâmpsia e 22 não tiveram o desfecho. Para cada paciente, o modelo produziu probabilidades de ocorrência de pré-eclâmpsia, a partir das quais foram estimadas as curvas \textit{Receiver Operating Characteristic} (ROC) e \textit{precision-recall}. A partir dessas curvas, foram calculadas métricas de desempenho, incluindo área sob a curva (AUC), acurácia, sensibilidade, especificidade, precisão, \textit{F1-score} e matriz de confusão, com ênfase na análise da sensibilidade em diferentes pontos de corte.
+
+Foram desenvolvidas alguns notebooks 
 
 \begin{figure}[H]
     \centering
