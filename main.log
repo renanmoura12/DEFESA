@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  8 FEB 2026 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  12 FEB 2026 21:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -482,24 +482,24 @@ File: pppdftex.def 2025/01/30 v0.6e Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks46
 \c@AM@survey=\count330
 \AM@templatesizebox=\box72
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/newfloat/newfloat.sty
-Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
-Package newfloat Info: Document class `report' detected (original).
-)
-\@float@every@quadro=\toks47
-\c@quadro=\count331
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty
-Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip54
 \enit@outerparindent=\dimen323
-\enit@toks=\toks48
+\enit@toks=\toks47
 \enit@inbox=\box73
-\enit@count@id=\count332
-\enitdp@description=\count333
+\enit@count@id=\count331
+\enitdp@description=\count332
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
+Package newfloat Info: Document class `report' detected (original).
+)
+\@float@every@quadro=\toks48
+\c@quadro=\count333
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
@@ -964,7 +964,7 @@ Package tocbasic Info: setting babel extension for `nls' on input line 188.
 \@nomenclaturefile=\write5
 \openout5 = `main.nlo'.
 
-Package nomencl Info: Writing nomenclature file main.nlo on input line 95.
+Package nomencl Info: Writing nomenclature file main.nlo on input line 98.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
  (/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -1366,53 +1366,53 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazil'.
-LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 152.
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 152.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 152.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 155.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 152.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 152.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 155.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 152.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 152.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 155.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 152.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 152.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 155.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1449,7 +1449,7 @@ LaTeX Font Info:    ... okay on input line 152.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count526
-Package tocbasic Info: setting babel extension for `lol' on input line 152.
+Package tocbasic Info: setting babel extension for `lol' on input line 155.
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count527
@@ -1473,79 +1473,79 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 152.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 152.
+(Font)              scaled to size 8.8pt on input line 155.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 152.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 152.
+(Font)              scaled to size 8.8pt on input line 155.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 152.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 152.
+(Font)              scaled to size 8.8pt on input line 155.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 152.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 152.
+(Font)              scaled to size 8.8pt on input line 155.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 152.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 152.
+(Font)              scaled to size 6.6pt on input line 155.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 152.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 152.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 152.
+(Font)              scaled to size 8.8pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 152.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 152.
+(Font)              scaled to size 6.6pt on input line 155.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 152.
+(Font)              scaled to size 8.8pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 152.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 152.
+(Font)              scaled to size 6.6pt on input line 155.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 152.
+(Font)              scaled to size 8.8pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 152.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 152.
+(Font)              scaled to size 12.0pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 152.
+(Font)              scaled to size 8.8pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 152.
-Package xypdf Info: Line width: 0.672pt on input line 152.
+(Font)              scaled to size 6.6pt on input line 155.
+Package xypdf Info: Line width: 0.672pt on input line 155.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (/usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -1556,11 +1556,11 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 Package newfloat Info: `float' package detected.
-LaTeX Info: Command `\dddot' is already robust on input line 152.
-LaTeX Info: Command `\ddddot' is already robust on input line 152.
+LaTeX Info: Command `\dddot' is already robust on input line 155.
+LaTeX Info: Command `\ddddot' is already robust on input line 155.
 \c@mv@tabular=\count533
 \c@mv@boldtabular=\count534
-Package hyperref Info: Link coloring OFF on input line 152.
+Package hyperref Info: Link coloring OFF on input line 155.
  (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1634,15 +1634,15 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 152.
-Package biblatex Info: Reference segment=0 on input line 152.
-<imagens/uepb.png, id=106, 144.0582pt x 230.7822pt>
+Package biblatex Info: Reference section=0 on input line 155.
+Package biblatex Info: Reference segment=0 on input line 155.
+<imagens/uepb.png, id=134, 144.0582pt x 230.7822pt>
 File: imagens/uepb.png Graphic file (type png)
 <use imagens/uepb.png>
-Package pdftex.def Info: imagens/uepb.png  used on input line 161.
+Package pdftex.def Info: imagens/uepb.png  used on input line 164.
 (pdftex.def)             Requested size: 56.9055pt x 91.16324pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 166.
+(Font)              scaled to size 12.0pt on input line 169.
 
 
 [1
@@ -1653,7 +1653,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.218 \newpage
+l.221 \newpage
                [1]
 
 [2]
@@ -1675,438 +1675,478 @@ l.218 \newpage
 [8]
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 335.
+(Font)              scaled to size 12.0pt on input line 338.
 
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sl' will be
-(Font)              scaled to size 12.0pt on input line 343.
+(Font)              scaled to size 12.0pt on input line 345.
 [9
 
 ]
 
 [10]
+
+[11]
+
+[12]
 Cap\'{\i }tulo 2.
-
-
-[11
-
-]
-Cap\'{\i }tulo 3.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 380.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 377.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 380.
-
-
-[12
-
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-Cap\'{\i }tulo 4.
+(Font)              scaled to size 12.0pt on input line 377.
 
 
 [13
 
-]
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+Cap\'{\i }tulo 3.
 
-[14]
+
+[14
+
+]
 
 [15]
 
 [16]
-Cap\'{\i }tulo 5.
-<imagens/FMF.png, id=305, 842.14626pt x 930.47626pt>
-File: imagens/FMF.png Graphic file (type png)
-<use imagens/FMF.png>
-Package pdftex.def Info: imagens/FMF.png  used on input line 449.
-(pdftex.def)             Requested size: 381.63513pt x 421.6636pt.
 
+[17]
 
-[17
-
-]
-
-[18 <./imagens/FMF.png>]
+[18]
 
 [19]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 469.
+Cap\'{\i }tulo 4.
 
-Overfull \hbox (8.0153pt too wide) in paragraph at lines 520--520
- []|\T1/ntxtlf/b/n/10.95 Sensibilidade| 
+
+[20
+
+]
+Overfull \hbox (3.86322pt too wide) in paragraph at lines 501--502
+\T1/ntxtlf/m/n/12 Gradient-Boosted Tree (GB-Tree) para pre-di-ção de des-fe-chos ad-ver-sos as-so-ci-a-dos à pré-eclâmpsia,
  []
 
 
 
-[20]
-Cap\'{\i }tulo 6.
-<imagens/diagrama_metod.png, id=383, 1304.875pt x 283.0575pt>
-File: imagens/diagrama_metod.png Graphic file (type png)
-<use imagens/diagrama_metod.png>
-Package pdftex.def Info: imagens/diagrama_metod.png  used on input line 531.
-(pdftex.def)             Requested size: 455.2397pt x 98.75198pt.
-<imagens/diagrama_embrion.png, id=384, 762.85pt x 780.9175pt>
-File: imagens/diagrama_embrion.png Graphic file (type png)
-<use imagens/diagrama_embrion.png>
-Package pdftex.def Info: imagens/diagrama_embrion.png  used on input line 540.
-(pdftex.def)             Requested size: 274.60251pt x 281.10625pt.
-
-
-[21
-
- <./imagens/diagrama_metod.png> <./imagens/diagrama_embrion.png>]
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 553.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-File: t1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 553.
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 553.
- (./ExportService.cs
+[21]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1.
+(Font)              scaled to size 10.95pt on input line 515.
+
+Overfull \hbox (8.0153pt too wide) in paragraph at lines 578--578
+ []|\T1/ntxtlf/b/n/10.95 Sensibilidade| 
+ []
+
 
 
 [22]
 
 [23]
+Cap\'{\i }tulo 5.
+<imagens/diagrama_metod.png, id=480, 1304.875pt x 283.0575pt>
+File: imagens/diagrama_metod.png Graphic file (type png)
+<use imagens/diagrama_metod.png>
+Package pdftex.def Info: imagens/diagrama_metod.png  used on input line 590.
+(pdftex.def)             Requested size: 455.2397pt x 98.75198pt.
 
-[24]
 
-[25])
+[24
 
-[26]
+ <./imagens/diagrama_metod.png>]
+
+[25]
+Cap\'{\i }tulo 6.
+<imagens/diagrama_embrion.png, id=493, 762.85pt x 780.9175pt>
+File: imagens/diagrama_embrion.png Graphic file (type png)
+<use imagens/diagrama_embrion.png>
+Package pdftex.def Info: imagens/diagrama_embrion.png  used on input line 631.
+(pdftex.def)             Requested size: 274.60251pt x 281.10625pt.
+
+
+[26
+
+ <./imagens/diagrama_embrion.png>]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 713.
+
 
 [27]
-<imagens/entrada.png, id=581, 303.1325pt x 346.29375pt>
-File: imagens/entrada.png Graphic file (type png)
-<use imagens/entrada.png>
-Package pdftex.def Info: imagens/entrada.png  used on input line 578.
-(pdftex.def)             Requested size: 227.62206pt x 260.0367pt.
+
+[28]
+LaTeX Info: Symbol \texttwosuperior not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 741.
 
 
-[28 <./imagens/entrada.png>]
-Cap\'{\i }tulo 7.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (./finalAlg_clean.py
+[29]
 
-[29
+[30{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 765.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 765.
+LaTeX Info: Symbol \texttwosuperior not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 773.
 
-]
-
-[30]
 
 [31]
-
-[32]
-
-[33]
-
-[34]
-
-[35]
-
-[36]
-
-[37]
-
-[38]
-
-[39])
-
-[40]
-<imagens/avaliacao_roc_shap_crv.png, id=1088, 1073.9322pt x 353.1594pt>
+<imagens/avaliacao_roc_shap_crv.png, id=524, 1073.9322pt x 353.1594pt>
 File: imagens/avaliacao_roc_shap_crv.png Graphic file (type png)
 <use imagens/avaliacao_roc_shap_crv.png>
-Package pdftex.def Info: imagens/avaliacao_roc_shap_crv.png  used on input line 625.
+Package pdftex.def Info: imagens/avaliacao_roc_shap_crv.png  used on input line 783.
 (pdftex.def)             Requested size: 455.24348pt x 149.70544pt.
-<imagens/avaliacao_matriz_confusao.png, id=1089, 842.9091pt x 280.8894pt>
+<imagens/avaliacao_matriz_confusao.png, id=525, 842.9091pt x 280.8894pt>
 File: imagens/avaliacao_matriz_confusao.png Graphic file (type png)
 <use imagens/avaliacao_matriz_confusao.png>
-Package pdftex.def Info: imagens/avaliacao_matriz_confusao.png  used on input line 630.
+Package pdftex.def Info: imagens/avaliacao_matriz_confusao.png  used on input line 789.
 (pdftex.def)             Requested size: 455.2413pt x 151.70374pt.
 
 
-[41 <./imagens/avaliacao_roc_shap_crv.png> <./imagens/avaliacao_matriz_confusao.png>]
-Overfull \hbox (8.0153pt too wide) in paragraph at lines 698--698
+[32 <./imagens/avaliacao_roc_shap_crv.png>]
+Overfull \hbox (8.0153pt too wide) in paragraph at lines 871--871
  []|\T1/ntxtlf/b/n/10.95 Sensibilidade| 
  []
 
-<imagens/heroku.png, id=1128, 1475.5125pt x 729.72626pt>
+
+
+[33 <./imagens/avaliacao_matriz_confusao.png>]
+
+[34]
+<imagens/analise_overfitting.png, id=589, 1004.553pt x 353.1594pt>
+File: imagens/analise_overfitting.png Graphic file (type png)
+<use imagens/analise_overfitting.png>
+Package pdftex.def Info: imagens/analise_overfitting.png  used on input line 880.
+(pdftex.def)             Requested size: 455.24828pt x 160.0465pt.
+
+
+[35 <./imagens/analise_overfitting.png>]
+
+[36]
+<imagens/heroku.png, id=602, 1475.5125pt x 729.72626pt>
 File: imagens/heroku.png Graphic file (type png)
 <use imagens/heroku.png>
-Package pdftex.def Info: imagens/heroku.png  used on input line 706.
+Package pdftex.def Info: imagens/heroku.png  used on input line 959.
 (pdftex.def)             Requested size: 455.24277pt x 225.14388pt.
+<imagens/entrada.png, id=603, 303.1325pt x 346.29375pt>
+File: imagens/entrada.png Graphic file (type png)
+<use imagens/entrada.png>
+Package pdftex.def Info: imagens/entrada.png  used on input line 967.
+(pdftex.def)             Requested size: 227.62206pt x 260.0367pt.
 
 
-[42]
-<imagens/swagger.png, id=1138, 1468.48625pt x 444.66125pt>
+[37 <./imagens/heroku.png>]
+<imagens/swagger.png, id=610, 1468.48625pt x 444.66125pt>
 File: imagens/swagger.png Graphic file (type png)
 <use imagens/swagger.png>
-Package pdftex.def Info: imagens/swagger.png  used on input line 714.
+Package pdftex.def Info: imagens/swagger.png  used on input line 975.
 (pdftex.def)             Requested size: 455.22604pt x 137.84355pt.
 
 
-[43 <./imagens/heroku.png> <./imagens/swagger.png>]
-<imagens/pastas.png, id=1147, 1541.76pt x 1027.84pt>
-File: imagens/pastas.png Graphic file (type png)
-<use imagens/pastas.png>
-Package pdftex.def Info: imagens/pastas.png  used on input line 722.
-(pdftex.def)             Requested size: 318.66948pt x 212.43375pt.
+[38 <./imagens/entrada.png> <./imagens/swagger.png>]
+File: imagens/heroku.png Graphic file (type png)
+<use imagens/heroku.png>
+Package pdftex.def Info: imagens/heroku.png  used on input line 1005.
+(pdftex.def)             Requested size: 318.66948pt x 157.60071pt.
 
 
-[44 <./imagens/pastas.png (PNG copy)>]
-Cap\'{\i }tulo 8.
+[39]
+Cap\'{\i }tulo 7.
 
 
-[45
+[40
 
 ]
+
+[41]
+
+[42
+
+]
+
+[43]
+
+[44]
+
+[45]
 
 [46]
-
-[47]
-
-[48]
-
-[49]
-
-[50
-
-]
-
-[51]
-
-[52]
-
-[53]
-<imagens/effectiveness_ml_predicting.pdf, id=1244, 441.01764pt x 668.64006pt>
+Ap\^endice A.
+<imagens/effectiveness_ml_predicting.pdf, id=724, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf  used on input line 909.
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf  used on input line 1054.
 (pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
-<imagens/effectiveness_ml_predicting.pdf, id=1246, page=1, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=726, page=1, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 1>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 909.
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 1054.
 (pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 1>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 909.
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 
 
-[54
+[47
 
 
 ]
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 1>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 909.
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 1>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 909.
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 
 
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 1>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 909.
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+[48
+
+ <./imagens/effectiveness_ml_predicting.pdf>]
+<imagens/effectiveness_ml_predicting.pdf, id=780, page=2, 441.01764pt x 668.64006pt>
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 2>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page2 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 2>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page2 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+
+
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 2>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page2 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+[49
+
+ <./imagens/effectiveness_ml_predicting.pdf>]
+<imagens/effectiveness_ml_predicting.pdf, id=810, page=3, 441.01764pt x 668.64006pt>
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 3>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page3 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 3>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page3 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+
+
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 3>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page3 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+[50
+
+ <./imagens/effectiveness_ml_predicting.pdf>]
+<imagens/effectiveness_ml_predicting.pdf, id=818, page=4, 441.01764pt x 668.64006pt>
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 4>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page4 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 4>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page4 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+
+
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 4>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page4 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+[51
+
+ <./imagens/effectiveness_ml_predicting.pdf>]
+<imagens/effectiveness_ml_predicting.pdf, id=830, page=5, 441.01764pt x 668.64006pt>
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 5>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page5 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 5>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page5 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+
+
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 5>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page5 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+[52
+
+ <./imagens/effectiveness_ml_predicting.pdf>]
+<imagens/effectiveness_ml_predicting.pdf, id=835, page=6, 441.01764pt x 668.64006pt>
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 6>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page6 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 6>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page6 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+
+
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 6>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page6 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+[53
+
+ <./imagens/effectiveness_ml_predicting.pdf>]
+<imagens/effectiveness_ml_predicting.pdf, id=847, page=7, 441.01764pt x 668.64006pt>
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 7>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page7 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 7>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page7 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+
+
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 7>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page7 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+[54
+
+ <./imagens/effectiveness_ml_predicting.pdf>]
+<imagens/effectiveness_ml_predicting.pdf, id=856, page=8, 441.01764pt x 668.64006pt>
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 8>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page8 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 8>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page8 used on input line 1054.
+(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+
+
+File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
+<use imagens/effectiveness_ml_predicting.pdf, page 8>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page8 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 [55
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1302, page=2, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=868, page=9, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 2>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page2 used on input line 909.
+<use imagens/effectiveness_ml_predicting.pdf, page 9>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page9 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 2>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page2 used on input line 909.
+<use imagens/effectiveness_ml_predicting.pdf, page 9>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page9 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 
 
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 2>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page2 used on input line 909.
+<use imagens/effectiveness_ml_predicting.pdf, page 9>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page9 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 [56
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1332, page=3, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=878, page=10, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 3>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page3 used on input line 909.
+<use imagens/effectiveness_ml_predicting.pdf, page 10>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page10 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 3>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page3 used on input line 909.
+<use imagens/effectiveness_ml_predicting.pdf, page 10>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page10 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 
 
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 3>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page3 used on input line 909.
+<use imagens/effectiveness_ml_predicting.pdf, page 10>
+Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page10 used on input line 1054.
 (pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 [57
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1340, page=4, 441.01764pt x 668.64006pt>
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 4>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page4 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 4>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page4 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+Ap\^endice B.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1068.
+(./ExportService.cs
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.0pt on input line 1.
 
 
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 4>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page4 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 [58
 
- <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1351, page=5, 441.01764pt x 668.64006pt>
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 5>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page5 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 5>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page5 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 
+]
 
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 5>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page5 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-[59
+[59]
 
- <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1356, page=6, 441.01764pt x 668.64006pt>
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 6>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page6 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 6>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page6 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
+[60]
 
+[61])
 
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 6>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page6 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-[60
+[62]
+Ap\^endice C.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (./finalAlg_clean.py
 
- <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1369, page=7, 441.01764pt x 668.64006pt>
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 7>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page7 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 7>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page7 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-
-
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 7>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page7 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-[61
-
- <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1377, page=8, 441.01764pt x 668.64006pt>
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 8>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page8 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 8>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page8 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-
-
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 8>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page8 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-[62
-
- <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1389, page=9, 441.01764pt x 668.64006pt>
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 9>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page9 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 9>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page9 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-
-
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 9>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page9 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 [63
 
- <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=1399, page=10, 441.01764pt x 668.64006pt>
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 10>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page10 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 10>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page10 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
 
+]
 
-File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
-<use imagens/effectiveness_ml_predicting.pdf, page 10>
-Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page10 used on input line 909.
-(pdftex.def)             Requested size: 557.89912pt x 845.8476pt.
-[64
+[64]
 
- <./imagens/effectiveness_ml_predicting.pdf>] (./main.aux)
+[65]
+
+[66]
+
+[67]
+
+[68]
+
+[69]
+
+[70]
+
+[71]
+
+[72]
+
+[73])
+
+[74] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C86C3C402FFF523DE5645FFB3F0694CE;3384.
+(rerunfilecheck)             Checksum: 3B03E5576BD712D61AEC26D26CC31339;4980.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48197 strings out of 473190
- 851880 string characters out of 5715799
- 1989017 words of memory out of 5000000
- 69890 multiletter control sequences out of 15000+600000
- 621981 words of font info for 143 fonts, out of 8000000 for 9000
+ 48297 strings out of 473190
+ 854534 string characters out of 5715799
+ 1980798 words of memory out of 5000000
+ 69963 multiletter control sequences out of 15000+600000
+ 622318 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,17n,117p,3270b,4449s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (65 pages, 2086922 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (75 pages, 1469088 bytes).
 PDF statistics:
- 1585 PDF objects out of 1728 (max. 8388607)
- 1375 compressed objects within 14 object streams
- 743 named destinations out of 1000 (max. 500000)
- 323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1757 PDF objects out of 2073 (max. 8388607)
+ 1518 compressed objects within 16 object streams
+ 768 named destinations out of 1000 (max. 500000)
+ 374 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,28 +1,40 @@
 \babel@toc {brazil}{}\relax 
 \contentsline {chapter}{\numberline {1}INTRODUÇÃO}{9}{chapter.1}%
-\contentsline {chapter}{\numberline {2}OBJETIVOS}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Objetivos gerais}{11}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Objetivos especificos}{11}{section.2.2}%
-\contentsline {chapter}{\numberline {3}RISCOS E BENEFÍCIOS}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Benefícios}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Riscos}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Prevenção e minimização dos riscos}{12}{section.3.3}%
-\contentsline {chapter}{\numberline {4}FUNDAMENTAÇÃO TEÓRICA}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pré-Natal}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Pré-eclâmpsia}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Biomarcadores}{14}{section.4.3}%
-\contentsline {section}{\numberline {4.4}API REST}{14}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Machine Learning}{15}{section.4.5}%
-\contentsline {chapter}{\numberline {5}ESTADO DA ARTE}{17}{chapter.5}%
-\contentsline {chapter}{\numberline {6}METODOLOGIA}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Análise e exportação dos dados}{21}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Preparação dos dados e validação}{27}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Treinamento do modelo}{27}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Validação do modelo}{27}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Desenvolvimento da API}{28}{section.6.5}%
-\contentsline {chapter}{\numberline {7}RESULTADOS}{29}{chapter.7}%
-\contentsline {chapter}{\numberline {8}DISCUSSÃO}{45}{chapter.8}%
-\contentsline {chapter}{REFERÊNCIAS}{50}{section*.15}%
+\contentsline {chapter}{\numberline {2}RISCOS E BENEFÍCIOS}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Benefícios}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Riscos}{13}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Prevenção e minimização dos riscos}{13}{section.2.3}%
+\contentsline {chapter}{\numberline {3}FUNDAMENTAÇÃO TEÓRICA}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Pré-Natal}{14}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Pré-eclâmpsia}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Biomarcadores}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Machine Learning}{16}{section.3.4}%
+\contentsline {section}{\numberline {3.5}API REST}{19}{section.3.5}%
+\contentsline {chapter}{\numberline {4}ESTADO DA ARTE}{20}{chapter.4}%
+\contentsline {chapter}{\numberline {5}METODOLOGIA}{24}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Análise e exportação dos dados}{24}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Preparação dos dados e validação}{24}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Treinamento do modelo}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Validação do modelo}{25}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Desenvolvimento da API}{25}{section.5.5}%
+\contentsline {chapter}{\numberline {6}DESENVOLVIMENTO DO MODELO}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Dados}{26}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Extração e Integração dos Dados}{27}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Pré-processamento e Tratamento dos Dados}{28}{subsection.6.1.2}%
+\contentsline {subsubsection}{Identificação de Episódios Gestacionais}{28}{subsection.6.1.2}%
+\contentsline {subsubsection}{Padronização de Variáveis Categóricas}{29}{subsection.6.1.2}%
+\contentsline {subsubsection}{Cálculo da Idade Materna}{29}{subsection.6.1.2}%
+\contentsline {subsubsection}{Tratamento de Valores Ausentes}{29}{subsection.6.1.2}%
+\contentsline {subsubsection}{Aplicação de Limites Fisiológicos}{30}{subsection.6.1.2}%
+\contentsline {subsubsection}{Correção do Peso Materno}{30}{subsection.6.1.2}%
+\contentsline {subsubsection}{Extração de Informações de Texto Livre}{30}{subsection.6.1.2}%
+\contentsline {subsubsection}{Pipeline de Pré-processamento}{30}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Modelo PPML}{31}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Resultados}{32}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Discussão}{35}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Disponibilização}{37}{section.6.5}%
+\contentsline {chapter}{\numberline {7}CONCLUSÃO}{40}{chapter.7}%
+\contentsline {chapter}{REFERÊNCIAS}{42}{section*.15}%
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
@@ -53,4 +65,25 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {chapter}{APÊNDICES}{54}{section*.15}%
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{APÊNDICES}{47}{section*.15}%
+\contentsline {chapter}{\numberline {A}Protocolo da revisão de escopo}{47}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Algoritmo de processamento e exportação de laudos médicos}{58}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Algoritmo de treinamento do modelo LightGBM}{63}{appendix.C}%
