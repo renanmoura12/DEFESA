@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  12 FEB 2026 21:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  12 FEB 2026 22:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1793,26 +1793,26 @@ LaTeX Info: Symbol \texttwosuperior not provided by
 
 
 [31]
-<imagens/avaliacao_roc_shap_crv.png, id=524, 1073.9322pt x 353.1594pt>
-File: imagens/avaliacao_roc_shap_crv.png Graphic file (type png)
-<use imagens/avaliacao_roc_shap_crv.png>
-Package pdftex.def Info: imagens/avaliacao_roc_shap_crv.png  used on input line 783.
-(pdftex.def)             Requested size: 455.24348pt x 149.70544pt.
-<imagens/avaliacao_matriz_confusao.png, id=525, 842.9091pt x 280.8894pt>
-File: imagens/avaliacao_matriz_confusao.png Graphic file (type png)
-<use imagens/avaliacao_matriz_confusao.png>
-Package pdftex.def Info: imagens/avaliacao_matriz_confusao.png  used on input line 789.
-(pdftex.def)             Requested size: 455.2413pt x 151.70374pt.
+<imagens/avaliacao_lightgbm.png, id=524, 1076.823pt x 353.1594pt>
+File: imagens/avaliacao_lightgbm.png Graphic file (type png)
+<use imagens/avaliacao_lightgbm.png>
+Package pdftex.def Info: imagens/avaliacao_lightgbm.png  used on input line 783.
+(pdftex.def)             Requested size: 455.23659pt x 149.30128pt.
+<imagens/probabilidades_matriz_confusao.png, id=525, 841.9455pt x 280.8894pt>
+File: imagens/probabilidades_matriz_confusao.png Graphic file (type png)
+<use imagens/probabilidades_matriz_confusao.png>
+Package pdftex.def Info: imagens/probabilidades_matriz_confusao.png  used on input line 789.
+(pdftex.def)             Requested size: 455.23476pt x 151.87517pt.
 
 
-[32 <./imagens/avaliacao_roc_shap_crv.png>]
+[32 <./imagens/avaliacao_lightgbm.png>]
 Overfull \hbox (8.0153pt too wide) in paragraph at lines 871--871
  []|\T1/ntxtlf/b/n/10.95 Sensibilidade| 
  []
 
 
 
-[33 <./imagens/avaliacao_matriz_confusao.png>]
+[33 <./imagens/probabilidades_matriz_confusao.png>]
 
 [34]
 <imagens/analise_overfitting.png, id=589, 1004.553pt x 353.1594pt>
@@ -2136,14 +2136,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  48297 strings out of 473190
- 854534 string characters out of 5715799
+ 854541 string characters out of 5715799
  1980798 words of memory out of 5000000
  69963 multiletter control sequences out of 15000+600000
  622318 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,17n,117p,3270b,4449s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (75 pages, 1469088 bytes).
+Output written on main.pdf (75 pages, 1471606 bytes).
 PDF statistics:
  1757 PDF objects out of 2073 (max. 8388607)
  1518 compressed objects within 16 object streams

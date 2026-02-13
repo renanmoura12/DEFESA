@@ -357,7 +357,7 @@ Portanto construimos um de ML eficiente em condições de baixa disponibilidade 
 
 O modelo foi treinado a partir de dados oriundos do atendimento clínico diário a gestantes, previamente armazenados em um sistema de laudos de ultrassom existente antes do início deste estudo, junto ao levantamento dos desfechos gestacionais correspondentes e validado internamente por meio de validação cruzada estratificada por paciente. Embora os dados utilizados não tenham a pretensão de representar integralmente a população de gestantes brasileiras, eles refletem de forma fidedigna a prática clínica local e demonstram o potencial da abordagem proposta como uma alternativa viável e acessível para a identificação precoce de riscos, sem dependência de dispositivos laboratoriais especializados.
 
-O modelo final, baseado em LightGBM com técnicas de data augmentation gaussiana e SMOTE, alcançou AUC-ROC de 0,9886, sensibilidade de 95\% e especificidade de 91\%, superando os principais modelos descritos na literatura para predição de pré-eclâmpsia — sem a necessidade de biomarcadores laboratoriais, utilizando apenas variáveis clínicas e obstétricas. Esses resultados demonstram o potencial de abordagens de aprendizado de máquina aplicadas a dados clínicos acessíveis para a detecção precoce da pré-eclâmpsia, contribuindo para a redução de desfechos adversos materno-fetais.
+O modelo final, baseado em LightGBM com técnicas de data augmentation gaussiana e SMOTE, alcançou AUC-ROC de 0,9886, sensibilidade de 95\% e especificidade de 95,45\%, superando os principais modelos descritos na literatura para predição de pré-eclâmpsia — sem a necessidade de biomarcadores laboratoriais, utilizando apenas variáveis clínicas e obstétricas. Esses resultados demonstram o potencial de abordagens de aprendizado de máquina aplicadas a dados clínicos acessíveis para a detecção precoce da pré-eclâmpsia, contribuindo para a redução de desfechos adversos materno-fetais.
 
 %----------
 %---CAPÍTULO I 
@@ -762,9 +762,9 @@ Ao final do processamento, a base de dados final apresentou as seguintes caracte
 
 \section{Modelo PPML}
 
-O modelo final implementado foi o LightGBM (\texttt{LGBMClassifier}), um algoritmo baseado em \textit{gradient boosting} otimizado para classificação binária, escolhido por demonstrar desempenho superior considerando o tamanho amostral disponível. O processo de seleção de variáveis foi conduzido de forma iterativa, iniciando com todas as variáveis disponíveis na planilha exportada e utilizando a técnica de importância de características baseada em SHAP (\textit{SHapley Additive exPlanations}) para medir a contribuição efetiva de cada variável para as predições do modelo.
+O modelo final implementado foi o LightGBM (\texttt{LGBMClassifier}), um algoritmo baseado em \textit{gradient boosting} otimizado para classificação binária, escolhido por demonstrar desempenho superior considerando o tamanho amostral disponível. O processo de seleção de variáveis foi conduzido de forma iterativa, iniciando com todas as variáveis disponíveis na planilha com as informações exportadas.
 
-Testes sucessivos de treinamento e validação interna foram conduzidos para identificar as variáveis que efetivamente impactavam a capacidade preditiva do modelo. Variáveis que apresentaram importância nula ou próxima de zero foram sistematicamente excluídas. A baixa importância dessas variáveis decorreu principalmente da escassez de ocorrências daqueles dados na base, inviabilizando a criação de dados sintéticos e tornando sua inclusão inadequada do ponto de vista metodológico.
+Testes sucessivos de treinamento e validação interna foram conduzidos para identificar as variáveis que efetivamente impactavam a capacidade preditiva do modelo utilizando a técnica de importância de características baseada em SHAP (\textit{SHapley Additive exPlanations}) para medir a contribuição efetiva de cada variável para as predições do modelo. Variáveis que apresentaram importância nula ou próxima de zero foram sistematicamente excluídas. A baixa importância dessas variáveis decorreu principalmente da escassez de ocorrências daqueles dados na base, inviabilizando a criação de dados sintéticos e tornando sua inclusão inadequada do ponto de vista metodológico.
 
 Ao término do processo de seleção, o modelo foi treinado com 17 variáveis clínicas e ultrassonográficas: idade materna, índice de massa corporal (IMC), diabetes mellitus, hipertensão arterial, origem racial, histórico familiar de diabetes, tipo de diabetes, índice de pulsatilidade médio da artéria uterina (IP médio), perdas gestacionais anteriores, peso materno atual, idade gestacional, idade gestacional corrigida, peso fetal estimado, percentil da artéria uterina, percentil da artéria umbilical, percentil do peso fetal e circunferência abdominal fetal.
 
@@ -776,21 +776,21 @@ A \textit{pipeline} completa de preparação e validação dos dados foi impleme
 
 \section{Resultados}
 
-O modelo final alcançou AUC-ROC de 0.9886 e acurácia de 0.9286, com precisão de 0.9048, recall de 0.9500 e F1-score de 0.93, sendo escolhido como modelo final. A avaliação incluiu ROC-AUC, matriz de confusão, curvas de aprendizado e importância das variáveis baseada em SHAP, destacando como top 5: peso, IMC, idade, percentil da artéria uterina e média do Índice de Pulsatilidade. O código completo do treinamento está disponível no Anexo C.
+O modelo final alcançou AUC-ROC de 0.9886 e acurácia de 0.9524, com precisão de 0.9500, recall de 0.9500 e F1-score de 0.93, sendo escolhido como modelo final. A avaliação incluiu ROC-AUC, matriz de confusão, curvas de aprendizado e importância das variáveis baseada em SHAP, destacando como top 10: IMC, peso, idade, hipertensão, tipo de diabetes(se tiver), percentil da artéria umbilical, origem racial, média do Índice de Pulsatilidade e peso fetal . O código completo do treinamento está disponível no Anexo C.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/avaliacao_roc_shap_crv.png}
+    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/avaliacao_lightgbm.png}
     \caption{Fonte: Autor, 2025.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/avaliacao_matriz_confusao.png}
+    \includegraphics[width=\textwidth, height=0.6\textheight, keepaspectratio]{imagens/probabilidades_matriz_confusao.png}
     \caption{Fonte: Autor, 2025.}
 \end{figure}
 
-Quando comparado aos modelos descritos no estado da arte, o modelo proposto demonstrou desempenho superior na identificação correta dos casos positivos, alcançando uma taxa de verdadeiros positivos (TPR) de 95\%, o que indica elevada capacidade de detecção dos casos de pré-eclâmpsia. A matriz de confusão evidencia 19 verdadeiros positivos, 20 verdadeiros negativos, apenas 2 falsos positivos e 1 falso negativo em um total de 42 casos que serviram para validação interna. Esse resultado corresponde a uma perda diagnóstica de apenas 5\% entre os casos positivos, refletindo alta sensibilidade, aliada a uma especificidade de 91\%. Tal desempenho mostra um equilíbrio favorável entre a detecção precoce e a contenção de classificações incorretas, aspecto particularmente relevante no contexto clínico da pré-eclâmpsia, em que a identificação dos casos verdadeiros é essencial para a redução de desfechos adversos materno-fetais, sem comprometer a eficiência do sistema de saúde.
+Quando comparado aos modelos descritos no estado da arte, o modelo proposto demonstrou desempenho superior na identificação correta dos casos positivos, alcançando uma taxa de verdadeiros positivos (TPR) de 95\%, o que indica elevada capacidade de detecção dos casos de pré-eclâmpsia. A matriz de confusão evidencia 19 verdadeiros positivos, 21 verdadeiros negativos, apenas 1 falso positivo e 1 falso negativo em um total de 42 casos que serviram para validação interna. Esse resultado corresponde a uma perda diagnóstica de apenas 5\% entre os casos positivos, refletindo alta sensibilidade, aliada a uma especificidade de 95,45\%. Tal desempenho mostra um equilíbrio favorável entre a detecção precoce e a contenção de classificações incorretas, aspecto particularmente relevante no contexto clínico da pré-eclâmpsia, em que a identificação dos casos verdadeiros é essencial para a redução de desfechos adversos materno-fetais, sem comprometer a eficiência do sistema de saúde.
 
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.25}
@@ -864,7 +864,7 @@ Edvinsson et al. (XGBoost) \cite{Edvinsson2024}
 & \textbf{17 variáveis clínicas/obstétricas (idade, IMC, diabetes, peso gestacional, peso, etc.)}
 & \textbf{0,9886}
 & \textbf{0,9500}
-& \textbf{0,955 (esp.) / FPR = 9,1\%}
+& \textbf{0,9545 (esp.) / FPR = 4,55\%}
 & \textbf{Amostra real local (42 casos: 20 com e 22 sem PE); sem uso de biomarcadores.} \\
 
 \hline
@@ -1018,9 +1018,9 @@ A estratégia metodológica adotada, que incluiu seleção criteriosa de variáv
 
 A disponibilização do modelo por meio de uma API REST, desenvolvida em Python com FastAPI e hospedada em ambiente cloud, viabiliza a integração da ferramenta em sistemas de informação em saúde existentes, permitindo sua aplicação em tempo quase real durante o atendimento pré-natal. Essa arquitetura possibilita que profissionais de saúde possam obter estimativas de risco individualizadas, contribuindo para estratificação mais precisa das gestantes e direcionamento de recursos e intervenções preventivas.
 
-Reconhece-se, entretanto, algumas limitações importantes do estudo. O tamanho amostral relativamente reduzido (42 casos de validação), embora tenha permitido resultados promissores, pode limitar a generalização do modelo para populações com características demográficas, clínicas ou étnicas distintas. A origem dos dados em um único centro de atendimento também pode introduzir vieses relacionados ao perfil específico da população atendida e aos protocolos locais de assistência pré-natal. Adicionalmente, a validação foi conduzida de forma interna, sem validação externa em coortes independentes, o que representa uma etapa essencial para confirmação da robustez e aplicabilidade clínica do modelo.
+Reconhece-se, entretanto, algumas limitações importantes do estudo. O tamanho amostral relativamente reduzido (42 casos de validação), embora tenha permitido resultados promissores, pode limitar a generalização do modelo para populações com características demográficas, clínicas ou étnicas distintas. A origem dos dados em um único centro de atendimento também pode introduzir vieses relacionados ao perfil específico da população atendida e aos protocolos locais de assistência pré-natal. Além disso, em decorrência da escassez de registros disponíveis, o treinamento do modelo dependeu de técnicas de geração de dados sintéticos — como SMOTE e \textit{data augmentation} gaussiana —, o que implica que parte das amostras utilizadas durante o aprendizado não corresponde a observações clínicas reais, podendo introduzir padrões artificiais que não se reproduzam em cenários clínicos concretos. Contudo, a arquitetura do PPML foi projetada para permitir o retreinamento com novos dados reais à medida que estes se tornem disponíveis, de modo que a incorporação progressiva de registros clínicos genuínos tende a reduzir a dependência de dados sintéticos e a fortalecer a capacidade de generalização do modelo. A validação foi conduzida de forma interna, sem validação externa em coortes independentes, o que representa uma etapa essencial para confirmação da robustez e aplicabilidade clínica do modelo.
 
-Estudos futuros devem priorizar a validação externa do PPML em diferentes populações e contextos assistenciais, a ampliação da base de dados com inclusão de maior número de casos prospectivos, e a avaliação do impacto clínico real da ferramenta quando integrada à rotina de cuidado pré-natal. A investigação de modelos que combinem o PPML com outros preditores também pode representar uma via promissora para aprimoramento contínuo da capacidade preditiva.
+Estudos futuros devem priorizar a essa validação externa do PPML em diferentes populações e contextos assistenciais, a ampliação da base de dados com inclusão de maior número de casos prospectivos, e a avaliação do impacto clínico real da ferramenta quando integrada à rotina de cuidado pré-natal. A investigação de modelos que combinem o PPML com outros preditores também pode representar uma via promissora para aprimoramento contínuo da capacidade preditiva.
 
 Ao final, concluímos que o modelo PPML representa uma contribuição relevante para a predição de pré-eclâmpsia no contexto brasileiro, oferecendo uma alternativa tecnicamente viável, de baixo custo operacional e potencialmente implementável em larga escala em qualquer sistema que possua os dados necessarias para a predição, como o Sistema Único de Saúde(SUS). Apesar das limitações apontadas, os resultados obtidos indicam que a abordagem proposta pode auxiliar na identificação precoce de gestantes em risco, contribuindo para a redução de desfechos adversos materno-fetais associados à pré-eclâmpsia.
 

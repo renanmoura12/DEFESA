@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1770843284.03807 "main.bcf" "main.bbl" "main" 1770943139.7142 0
-  "main.bcf" 1770943139.5359 117948 f6dfefa9fd7b6565c034ed190193c3d1 "pdflatex"
+["biber main"] 1770843284.03807 "main.bcf" "main.bbl" "main" 1770946626.49251 0
+  "main.bcf" 1770946626.31147 117948 f6dfefa9fd7b6565c034ed190193c3d1 "pdflatex"
   "referencias.bib" 1770838320.7688 26589 e537121a23560a18616107edce94c388 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1770943133.35089 "/Users/renanmoura/Downloads/DEFESA/main.tex" "main.pdf" "main" 1770943139.71455 0
-  "/Users/renanmoura/Downloads/DEFESA/main.tex" 1770943120.42422 82820 306b2b8534568c90a16aaa43b8b77d39 ""
+["pdflatex"] 1770946620.21047 "/Users/renanmoura/Downloads/DEFESA/main.tex" "main.pdf" "main" 1770946626.49285 0
+  "/Users/renanmoura/Downloads/DEFESA/main.tex" 1770946619.95792 83658 6c7edce63c6597f9e9627490129fb07e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -323,21 +323,21 @@
   "ExportService.cs" 1770482740.34659 4778 684b3400f95305be37dd3fd79f405dee ""
   "finalAlg_clean.py" 1770576864.02808 13016 46047107b943e3230a8301410cb604a3 ""
   "imagens/analise_overfitting.png" 1770940658.85579 189142 3dfdcf4c81a5cbd4878e014c8c9f28ea ""
-  "imagens/avaliacao_matriz_confusao.png" 1770557805.19933 129009 5744e900c0ae87ed2b3d45cc6386fc9d ""
-  "imagens/avaliacao_roc_shap_crv.png" 1770557805.1955 311053 41056c098d70eb44b1943514a29967e5 ""
+  "imagens/avaliacao_lightgbm.png" 1770946125.33162 326247 a08d83f7b55aa4c2d6a87273f2c5c072 ""
   "imagens/diagrama_embrion.png" 1764807374.00277 83646 b6458ebd73ed115181da53f96b800bd7 ""
   "imagens/diagrama_metod.png" 1770473875.94679 16057 01276cd8f01c132f345d9d8597c02a8a ""
   "imagens/effectiveness_ml_predicting.pdf" 1764701846.84671 154617 714b7b2c8d54fbeef0eda2de894c10bf ""
   "imagens/entrada.png" 1770484253.0871 118682 8c9979cfd5757521c4563f53a256ba1b ""
   "imagens/heroku.png" 1764804259.48374 305226 7549d34a76488557d7e124f8fbf90dc8 ""
+  "imagens/probabilidades_matriz_confusao.png" 1770946125.80874 117094 ff0f3afccbe6a9fdd6ef244589de88df ""
   "imagens/swagger.png" 1764806668.23046 120515 a8a79f2f95b1af7a7adb1e4a8831cc49 ""
   "imagens/uepb.png" 1764023018 46583 f6e75444f8bc524e657a54f6c3db5500 ""
-  "main.aux" 1770943139.46513 19571 82427b5935289725ffa146f3ea6c0318 "pdflatex"
+  "main.aux" 1770946626.25145 19571 82427b5935289725ffa146f3ea6c0318 "pdflatex"
   "main.bbl" 1770843286.28062 115793 475cb396fd1e099facf6302ff0098e73 "biber main"
-  "main.out" 1770943139.53252 4980 3b03e5576bd712d61aec26d26cc31339 "pdflatex"
-  "main.run.xml" 1770943139.53662 2444 1113619487f6620ff2ae6549d069e0ae "pdflatex"
-  "main.tex" 1770943120.42422 82820 306b2b8534568c90a16aaa43b8b77d39 ""
-  "main.toc" 1770943139.5367 4685 d337d74a585cf974245e4d40700d8a1e "pdflatex"
+  "main.out" 1770946626.30826 4980 3b03e5576bd712d61aec26d26cc31339 "pdflatex"
+  "main.run.xml" 1770946626.31219 2444 1113619487f6620ff2ae6549d069e0ae "pdflatex"
+  "main.tex" 1770946619.95792 83658 6c7edce63c6597f9e9627490129fb07e ""
+  "main.toc" 1770946626.31226 4685 d337d74a585cf974245e4d40700d8a1e "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
