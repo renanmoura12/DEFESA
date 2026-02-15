@@ -406,6 +406,52 @@
       \verb https://pubmed.ncbi.nlm.nih.gov/38694483/
       \endverb
     \endentry
+    \entry{Chaemsaithong2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a2718ad86ce36d2e5bf12d331cfcdc9b}{%
+           family={Chaemsaithong},
+           familyi={C\bibinitperiod},
+           given={Piya},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44782a18df3902a1b53e4bd2c2a01c4a}{%
+           family={Sahota},
+           familyi={S\bibinitperiod},
+           given={Daljit\bibnamedelima Singh},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d024a2e7594313436c213528070767e6}{%
+           family={Poon},
+           familyi={P\bibinitperiod},
+           given={Liona\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{fullhash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{fullhashraw}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{bibnamehash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{authorbibnamehash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{authornamehash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{authorfullhash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{authorfullhashraw}{749742b397cecf30f6a61ce3427e1c45}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Obstetrics and Gynecology}
+      \field{number}{2S}
+      \field{title}{First trimester preeclampsia screening and prediction}
+      \field{volume}{226}
+      \field{year}{2022}
+      \field{pages}{S1071\bibrangedash S1097.e2}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.ajog.2020.07.020
+      \endverb
+    \endentry
     \entry{chappell2021}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=070598d2c9b97e241be10612dced2651}{%
@@ -546,76 +592,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1080/10641955.2024.2312165
-      \endverb
-    \endentry
-    \entry{fonseca2023}{article}{}{}
-      \name{author}{7}{}{%
-        {{un=0,uniquepart=base,hash=7b88a7dd2610d8da07adda7cff354442}{%
-           family={Fonseca},
-           familyi={F\bibinitperiod},
-           given={Evelyn},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=163c2a3ce953c06e7bb26d289bef36ab}{%
-           family={Floriano},
-           familyi={F\bibinitperiod},
-           given={Karine},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fc5b9c60a79b0603f086796e9edc0090}{%
-           family={Tibúrcio},
-           familyi={T\bibinitperiod},
-           given={Natanael},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=387997a55abc79db25a23d52e5cbc9c6}{%
-           family={Rosa},
-           familyi={R\bibinitperiod},
-           given={Pablo},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c7a7c65a46ef82b70cf8eb3f3999dbf6}{%
-           family={Machado},
-           familyi={M\bibinitperiod},
-           given={Vitória},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2baa4d54348cba2ba21efa4652a4f717}{%
-           family={Assis},
-           familyi={A\bibinitperiod},
-           given={João},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2839c7f0fd46dcd5587ae4b39a43b3d4}{%
-           family={Sá},
-           familyi={S\bibinitperiod},
-           given={André},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{52bb9d4341f733f00a0e919130bc7878}
-      \strng{fullhash}{f6c3e82fe55e20d24f448802952123b9}
-      \strng{fullhashraw}{f6c3e82fe55e20d24f448802952123b9}
-      \strng{bibnamehash}{52bb9d4341f733f00a0e919130bc7878}
-      \strng{authorbibnamehash}{52bb9d4341f733f00a0e919130bc7878}
-      \strng{authornamehash}{52bb9d4341f733f00a0e919130bc7878}
-      \strng{authorfullhash}{f6c3e82fe55e20d24f448802952123b9}
-      \strng{authorfullhashraw}{f6c3e82fe55e20d24f448802952123b9}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{REVISTA FOCO}
-      \field{month}{12}
-      \field{title}{BIOMARCADORES NO DIAGNÓSTICO DE DOENÇAS}
-      \field{volume}{16}
-      \field{year}{2023}
-      \field{pages}{e3813}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.54751/revistafoco.v16n12-014
       \endverb
     \endentry
     \entry{garovic2022}{article}{}{}
@@ -2349,6 +2325,49 @@
       \endverb
       \keyw{First trimester,Screening,Diagnosis,Anomalies,Maternal complications,Preeclampsia}
     \endentry
+    \entry{sousa2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b3bc35bdf913eb911c56281213961e4}{%
+           family={Sousa},
+           familyi={S\bibinitperiod},
+           given={Idália\bibnamedelimb Costa\bibnamedelima de},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CDRR Editors}%
+      }
+      \strng{namehash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{fullhash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{fullhashraw}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{bibnamehash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{authorbibnamehash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{authornamehash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{authorfullhash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{authorfullhashraw}{3b3bc35bdf913eb911c56281213961e4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research, Society and Development}
+      \field{number}{6}
+      \field{title}{A importância do enfermeiro no pré-natal durante o acompanhamento de mulheres com diabetes gestacional}
+      \field{volume}{13}
+      \field{year}{2024}
+      \field{pages}{e3913645997}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.33448/rsd-v13i6.45997
+      \endverb
+      \verb{urlraw}
+      \verb https://rsdjournal.org/index.php/rsd/article/view/45997
+      \endverb
+      \verb{url}
+      \verb https://rsdjournal.org/index.php/rsd/article/view/45997
+      \endverb
+    \endentry
     \entry{Souza_Prestes_Santos_Cruz_2025}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=36c9e7a44a0c0ccc92dd5d9a909dbd5d}{%
@@ -2697,6 +2716,35 @@
       \verb{url}
       \verb https://rsdjournal.org/index.php/rsd/article/view/22903
       \endverb
+    \endentry
+    \entry{zamoraobando2022}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a09aad7870dcaa4847be2e1634ae8c2b}{%
+           family={Zamora-Obando},
+           familyi={Z\bibinithyphendelim O\bibinitperiod},
+           given={H.\bibnamedelimi R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{fullhash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{fullhashraw}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{bibnamehash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{authorbibnamehash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{authornamehash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{authorfullhash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{authorfullhashraw}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Química Nova}
+      \field{title}{Biomarcadores moleculares de doenças humanas: conceitos fundamentais, modelos de estudo e aplicações clínicas}
+      \field{year}{2022}
     \endentry
   \enddatalist
 \endrefsection

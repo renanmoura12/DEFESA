@@ -336,19 +336,21 @@ X_test_scaled = pd.DataFrame(X_test_scaled, columns=input_features)
 lgb_model = lgb.LGBMClassifier(
     objective='binary',
     boosting_type='gbdt',
-    n_estimators=500,
-    learning_rate=0.1,
-    num_leaves=31,
-    max_depth=6,
-    min_child_samples=20,
-    subsample=0.8,
-    colsample_bytree=0.8,
-    reg_alpha=0.1,
-    reg_lambda=0.1,
+    n_estimators=1000,
+    learning_rate=0.5,
+    num_leaves=20,
+    max_depth=5,
+    min_child_samples=30,
+    subsample=0.7,
+    colsample_bytree=0.7,
+    colsample_bylevel=0.7,
+    reg_alpha=1.0,
+    reg_lambda=2.0,
     random_state=RANDOM_STATE,
     n_jobs=-1,
     verbosity=-1, 
-    force_row_wise=True 
+    force_row_wise=True,
+    metric='binary_logloss'
 )
 
 lgb_model.fit(

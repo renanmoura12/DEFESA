@@ -252,6 +252,44 @@
       \verb 10.1038/s41591-019-0724-8
       \endverb
     \endentry
+    \entry{brasil2022_gestacao_alto_risco}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7b22ce690b1070af7af42e2cffb6a5a1}{%
+           family={{Brasil. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Departamento de Ações Programáticas}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brasília, DF, Brasil}%
+      }
+      \list{organization}{1}{%
+        {Ministério da Saúde}%
+      }
+      \strng{namehash}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \strng{fullhash}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \strng{fullhashraw}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \strng{bibnamehash}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \strng{authorbibnamehash}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \strng{authornamehash}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \strng{authorfullhash}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \strng{authorfullhashraw}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-65-5993-312-9}
+      \field{note}{1ª edição}
+      \field{title}{Manual de Gestação de Alto Risco}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf
+      \endverb
+      \verb{url}
+      \verb https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf
+      \endverb
+      \keyw{Gestação de alto risco,Obstetrícia,Saúde Materna}
+    \endentry
     \entry{Bulez2024}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -368,6 +406,52 @@
       \verb https://pubmed.ncbi.nlm.nih.gov/38694483/
       \endverb
     \endentry
+    \entry{Chaemsaithong2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a2718ad86ce36d2e5bf12d331cfcdc9b}{%
+           family={Chaemsaithong},
+           familyi={C\bibinitperiod},
+           given={Piya},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44782a18df3902a1b53e4bd2c2a01c4a}{%
+           family={Sahota},
+           familyi={S\bibinitperiod},
+           given={Daljit\bibnamedelima Singh},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d024a2e7594313436c213528070767e6}{%
+           family={Poon},
+           familyi={P\bibinitperiod},
+           given={Liona\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{fullhash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{fullhashraw}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{bibnamehash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{authorbibnamehash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{authornamehash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{authorfullhash}{749742b397cecf30f6a61ce3427e1c45}
+      \strng{authorfullhashraw}{749742b397cecf30f6a61ce3427e1c45}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Obstetrics and Gynecology}
+      \field{number}{2S}
+      \field{title}{First trimester preeclampsia screening and prediction}
+      \field{volume}{226}
+      \field{year}{2022}
+      \field{pages}{S1071\bibrangedash S1097.e2}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.ajog.2020.07.020
+      \endverb
+    \endentry
     \entry{chappell2021}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=070598d2c9b97e241be10612dced2651}{%
@@ -454,74 +538,60 @@
       \verb 10.1161/CIRCULATIONAHA.115.001593
       \endverb
     \endentry
-    \entry{fonseca2023}{article}{}{}
-      \name{author}{7}{}{%
-        {{un=0,uniquepart=base,hash=7b88a7dd2610d8da07adda7cff354442}{%
-           family={Fonseca},
-           familyi={F\bibinitperiod},
-           given={Evelyn},
-           giveni={E\bibinitperiod},
+    \entry{Edvinsson2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=2dda18174abe454ff1da067c15f03b74}{%
+           family={Edvinsson},
+           familyi={E\bibinitperiod},
+           given={Camilla},
+           giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=163c2a3ce953c06e7bb26d289bef36ab}{%
-           family={Floriano},
-           familyi={F\bibinitperiod},
-           given={Karine},
-           giveni={K\bibinitperiod},
+        {{un=0,uniquepart=base,hash=56ea8c866188765c90f665ca82b05a49}{%
+           family={Björnsson},
+           familyi={B\bibinitperiod},
+           given={Ola},
+           giveni={O\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=fc5b9c60a79b0603f086796e9edc0090}{%
-           family={Tibúrcio},
-           familyi={T\bibinitperiod},
-           given={Natanael},
-           giveni={N\bibinitperiod},
+        {{un=0,uniquepart=base,hash=e5e24072aa46a9fd47cad0156b4d57ce}{%
+           family={Erlandsson},
+           familyi={E\bibinitperiod},
+           given={Lena},
+           giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=387997a55abc79db25a23d52e5cbc9c6}{%
-           family={Rosa},
-           familyi={R\bibinitperiod},
-           given={Pablo},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c7a7c65a46ef82b70cf8eb3f3999dbf6}{%
-           family={Machado},
-           familyi={M\bibinitperiod},
-           given={Vitória},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2baa4d54348cba2ba21efa4652a4f717}{%
-           family={Assis},
-           familyi={A\bibinitperiod},
-           given={João},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2839c7f0fd46dcd5587ae4b39a43b3d4}{%
-           family={Sá},
-           familyi={S\bibinitperiod},
-           given={André},
-           giveni={A\bibinitperiod},
+        {{un=0,uniquepart=base,hash=4ac512521d6f4fdd1bf31f7b0d92fd8c}{%
+           family={Hansson},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{52bb9d4341f733f00a0e919130bc7878}
-      \strng{fullhash}{f6c3e82fe55e20d24f448802952123b9}
-      \strng{fullhashraw}{f6c3e82fe55e20d24f448802952123b9}
-      \strng{bibnamehash}{52bb9d4341f733f00a0e919130bc7878}
-      \strng{authorbibnamehash}{52bb9d4341f733f00a0e919130bc7878}
-      \strng{authornamehash}{52bb9d4341f733f00a0e919130bc7878}
-      \strng{authorfullhash}{f6c3e82fe55e20d24f448802952123b9}
-      \strng{authorfullhashraw}{f6c3e82fe55e20d24f448802952123b9}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \strng{namehash}{d6b7644526906e2c3c6585aac85d1693}
+      \strng{fullhash}{a1c00b791f57799a99c14c3e6979ead6}
+      \strng{fullhashraw}{a1c00b791f57799a99c14c3e6979ead6}
+      \strng{bibnamehash}{d6b7644526906e2c3c6585aac85d1693}
+      \strng{authorbibnamehash}{d6b7644526906e2c3c6585aac85d1693}
+      \strng{authornamehash}{d6b7644526906e2c3c6585aac85d1693}
+      \strng{authorfullhash}{a1c00b791f57799a99c14c3e6979ead6}
+      \strng{authorfullhashraw}{a1c00b791f57799a99c14c3e6979ead6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{REVISTA FOCO}
-      \field{month}{12}
-      \field{title}{BIOMARCADORES NO DIAGNÓSTICO DE DOENÇAS}
-      \field{volume}{16}
-      \field{year}{2023}
-      \field{pages}{e3813}
-      \range{pages}{-1}
+      \field{journaltitle}{Hypertension in Pregnancy}
+      \field{number}{1}
+      \field{title}{Predicting intensive care need in women with preeclampsia using machine learning – a pilot study}
+      \field{volume}{43}
+      \field{year}{2024}
       \verb{doi}
-      \verb 10.54751/revistafoco.v16n12-014
+      \verb 10.1080/10641955.2024.2312165
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/10641955.2024.2312165
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/10641955.2024.2312165
       \endverb
     \endentry
     \entry{garovic2022}{article}{}{}
@@ -846,6 +916,76 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0146280623006345
       \endverb
     \endentry
+    \entry{kolasa2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=81d7c9f03eb8acd1ba3381f6418eec22}{%
+           family={Kolasa},
+           familyi={K\bibinitperiod},
+           given={Katarzyna},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0063eaa9990eefed1dcd3655d14f194}{%
+           family={Admassu},
+           familyi={A\bibinitperiod},
+           given={Bisrat},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8b8ad7e3ca9e3ad6452093509c0a870}{%
+           family={Ho{ł}ownia-Voloskova},
+           familyi={H\bibinithyphendelim V\bibinitperiod},
+           given={Malwina},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10e6c34142528d3239a5a040fdf7e954}{%
+           family={Kédzior},
+           familyi={K\bibinitperiod},
+           given={Katarzyna\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54d63afa4669e2ff2322a5e09dfff009}{%
+           family={Poirrier},
+           familyi={P\bibinitperiod},
+           given={Jean-Etienne},
+           giveni={J\bibinithyphendelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9aaa8a491dd4579e2bae08c3a48bcda2}{%
+           family={Perni},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2d884163583c06929a02270508779062}
+      \strng{fullhash}{af37074b2c70ad935ae970c4b81ec299}
+      \strng{fullhashraw}{af37074b2c70ad935ae970c4b81ec299}
+      \strng{bibnamehash}{2d884163583c06929a02270508779062}
+      \strng{authorbibnamehash}{2d884163583c06929a02270508779062}
+      \strng{authornamehash}{2d884163583c06929a02270508779062}
+      \strng{authorfullhash}{af37074b2c70ad935ae970c4b81ec299}
+      \strng{authorfullhashraw}{af37074b2c70ad935ae970c4b81ec299}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Expert Review of Pharmacoeconomics and Outcomes Research}
+      \field{number}{1}
+      \field{title}{Systematic reviews of machine learning in healthcare: a literature review}
+      \field{volume}{24}
+      \field{year}{2024}
+      \field{pages}{63\bibrangedash 115}
+      \range{pages}{53}
+      \verb{doi}
+      \verb 10.1080/14737167.2023.2279107
+      \endverb
+      \verb{urlraw}
+      \verb https://pubmed.ncbi.nlm.nih.gov/37955147/
+      \endverb
+      \verb{url}
+      \verb https://pubmed.ncbi.nlm.nih.gov/37955147/
+      \endverb
+    \endentry
     \entry{Kreuzberger2023MLOps}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=6c6956c3486165d0cdc98d9d954a92aa}{%
@@ -1137,6 +1277,83 @@
       \verb 10.1016/j.siny.2020.101123
       \endverb
     \endentry
+    \entry{Magee2022_Preeclampsia}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=feaa7bb9497bcc7b1735927c5f557c33}{%
+           family={Magee},
+           familyi={M\bibinitperiod},
+           given={L.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d3288cb19fa50da48df30df0a5f334}{%
+           family={Magee},
+           familyi={M\bibinitperiod},
+           given={Laura\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=957f1eb1f8709d60a8167ac79bd1c8dd}{%
+           family={Nicolaides},
+           familyi={N\bibinitperiod},
+           given={Kypros},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a556056387be79c525bb68f871ce7304}{%
+           family={Nicolaides},
+           familyi={N\bibinitperiod},
+           given={Kypros\bibnamedelima H.},
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55a6b9a8f50ffb6716d58257ce927292}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0dab5e3a55748038d4cde88623654b21}{%
+           family={Dadelszen},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0,
+           prefix={von},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Massachusetts Medical Society}%
+      }
+      \strng{namehash}{8e4d4cfa758b7e5303a78b235abeabf6}
+      \strng{fullhash}{d7b7b7370cc40203333c817f6d588939}
+      \strng{fullhashraw}{d7b7b7370cc40203333c817f6d588939}
+      \strng{bibnamehash}{8e4d4cfa758b7e5303a78b235abeabf6}
+      \strng{authorbibnamehash}{8e4d4cfa758b7e5303a78b235abeabf6}
+      \strng{authornamehash}{8e4d4cfa758b7e5303a78b235abeabf6}
+      \strng{authorfullhash}{d7b7b7370cc40203333c817f6d588939}
+      \strng{authorfullhashraw}{d7b7b7370cc40203333c817f6d588939}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New England Journal of Medicine}
+      \field{month}{5}
+      \field{number}{19}
+      \field{title}{Preeclampsia}
+      \field{volume}{386}
+      \field{year}{2022}
+      \field{pages}{1817\bibrangedash 1832}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1056/NEJMra2109523
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nejm.org/doi/10.1056/NEJMra2109523
+      \endverb
+      \verb{url}
+      \verb https://www.nejm.org/doi/10.1056/NEJMra2109523
+      \endverb
+    \endentry
     \entry{mandel2016}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=c1792f0dfeeb742a62129e76ec790811}{%
@@ -1268,6 +1485,49 @@
       \verb 10.1016/j.ajogmf.2020.100100
       \endverb
     \endentry
+    \entry{Nicolaides2011_PrenatalCarePyramid}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a556056387be79c525bb68f871ce7304}{%
+           family={Nicolaides},
+           familyi={N\bibinitperiod},
+           given={Kypros\bibnamedelima H.},
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{a556056387be79c525bb68f871ce7304}
+      \strng{fullhash}{a556056387be79c525bb68f871ce7304}
+      \strng{fullhashraw}{a556056387be79c525bb68f871ce7304}
+      \strng{bibnamehash}{a556056387be79c525bb68f871ce7304}
+      \strng{authorbibnamehash}{a556056387be79c525bb68f871ce7304}
+      \strng{authornamehash}{a556056387be79c525bb68f871ce7304}
+      \strng{authorfullhash}{a556056387be79c525bb68f871ce7304}
+      \strng{authorfullhashraw}{a556056387be79c525bb68f871ce7304}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Prenatal Diagnosis}
+      \field{number}{1}
+      \field{title}{A model for a new pyramid of prenatal care based on the 11 to 13 weeks' assessment}
+      \field{volume}{31}
+      \field{year}{2011}
+      \field{pages}{3\bibrangedash 6}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1002/pd.2685
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/pd.2685
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/pd.2685
+      \endverb
+    \endentry
     \entry{oliveira2025}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ed198ada780a86f15c1e4b26ee80ba4d}{%
@@ -1386,6 +1646,85 @@
       \range{pages}{9}
       \verb{doi}
       \verb 10.18378/rbfh.v13i1.10360
+      \endverb
+    \endentry
+    \entry{rahmani2021}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=e1e40e1e4431c904a5969d532f0d9826}{%
+           family={Rahmani},
+           familyi={R\bibinitperiod},
+           given={Amir\bibnamedelima Masoud},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bbcedfe0398fd2f075005dd0d847ccb}{%
+           family={Yousefpoor},
+           familyi={Y\bibinitperiod},
+           given={Efat},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0cea6c4d8a8f95cbceeccc5f78ab76b1}{%
+           family={Yousefpoor},
+           familyi={Y\bibinitperiod},
+           given={Mohammad\bibnamedelima Sadegh},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55f52f990e463ffc2c71e0419fb788c0}{%
+           family={Mehmood},
+           familyi={M\bibinitperiod},
+           given={Zahid},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a5330a9b087097daa5cae6879767aaa}{%
+           family={Haider},
+           familyi={H\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5872ca7000694885cd7b289aed536271}{%
+           family={Hosseinzadeh},
+           familyi={H\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15515ded12adb68acec8f3faa3c9a61a}{%
+           family={Naqvi},
+           familyi={N\bibinitperiod},
+           given={Rizwan\bibnamedelima Ali},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{0e58d3c5f9be108b2976bc5be3e35d13}
+      \strng{fullhash}{50312575a5da8ec596409bfdc6a049ad}
+      \strng{fullhashraw}{50312575a5da8ec596409bfdc6a049ad}
+      \strng{bibnamehash}{0e58d3c5f9be108b2976bc5be3e35d13}
+      \strng{authorbibnamehash}{0e58d3c5f9be108b2976bc5be3e35d13}
+      \strng{authornamehash}{0e58d3c5f9be108b2976bc5be3e35d13}
+      \strng{authorfullhash}{50312575a5da8ec596409bfdc6a049ad}
+      \strng{authorfullhashraw}{50312575a5da8ec596409bfdc6a049ad}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics}
+      \field{number}{22}
+      \field{title}{Machine Learning (ML) in Medicine: Review, Applications, and Challenges}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{2970}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/math9222970
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2227-7390/9/22/2970
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2227-7390/9/22/2970
       \endverb
     \endentry
     \entry{bilda2024}{article}{}{}
@@ -1611,6 +1950,88 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1007/s42979-021-00592-x
+      \endverb
+    \endentry
+    \entry{Schmidt2022}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=e23cda229a8cf62d3c60be2d69cbde73}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Leon\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e536e779c36b46cea78b066934cd492}{%
+           family={Rieger},
+           familyi={R\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8e3a2bc3af64caa68d1a38dab917a1b}{%
+           family={Neznansky},
+           familyi={N\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0997fb99d2cd2dc0e9d9da76c3fd6039}{%
+           family={Hackelöer},
+           familyi={H\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8c6d4f1606a6285290d089080b76976}{%
+           family={Dröge},
+           familyi={D\bibinitperiod},
+           given={Lisa\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d12733efd247dbeeaaa2f687c44d1a9}{%
+           family={Henrich},
+           familyi={H\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6937fb359935ad7aa8b45aef929067c6}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f0c8f189c5698258c5077873e9143fd}{%
+           family={Verlohren},
+           familyi={V\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8d950b9c97cf91167db2278a38939de4}
+      \strng{fullhash}{e0c2dd237923840d2d22ddbdbf03bbb1}
+      \strng{fullhashraw}{e0c2dd237923840d2d22ddbdbf03bbb1}
+      \strng{bibnamehash}{8d950b9c97cf91167db2278a38939de4}
+      \strng{authorbibnamehash}{8d950b9c97cf91167db2278a38939de4}
+      \strng{authornamehash}{8d950b9c97cf91167db2278a38939de4}
+      \strng{authorfullhash}{e0c2dd237923840d2d22ddbdbf03bbb1}
+      \strng{authorfullhashraw}{e0c2dd237923840d2d22ddbdbf03bbb1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Obstetrics and Gynecology}
+      \field{number}{1}
+      \field{title}{A machine-learning-based algorithm improves prediction of preeclampsia-associated adverse outcomes}
+      \field{volume}{227}
+      \field{year}{2022}
+      \field{pages}{77.e1\bibrangedash 77.e30}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.ajog.2022.01.026
+      \endverb
+      \verb{urlraw}
+      \verb https://pubmed.ncbi.nlm.nih.gov/35114187/
+      \endverb
+      \verb{url}
+      \verb https://pubmed.ncbi.nlm.nih.gov/35114187/
       \endverb
     \endentry
     \entry{Shickel2018}{article}{}{}
@@ -1847,6 +2268,162 @@
       \endverb
       \verb{url}
       \verb https://repositorio.ufjf.br/jspui/bitstream/ufjf/13763/1/mayaraamandadasilva.pdf
+      \endverb
+    \endentry
+    \entry{SONEK2016305}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e93f4a6f31e2e5c54ec792788339f572}{%
+           family={Sonek},
+           familyi={S\bibinitperiod},
+           given={Jiri\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4224e787299cd3465fa4e99d05552e8f}{%
+           family={Kagan},
+           familyi={K\bibinitperiod},
+           given={Karl\bibnamedelima Oliver},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a556056387be79c525bb68f871ce7304}{%
+           family={Nicolaides},
+           familyi={N\bibinitperiod},
+           given={Kypros\bibnamedelima H.},
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7d3cbb531796e49dd8c781b1b6845e17}
+      \strng{fullhash}{7d3cbb531796e49dd8c781b1b6845e17}
+      \strng{fullhashraw}{7d3cbb531796e49dd8c781b1b6845e17}
+      \strng{bibnamehash}{7d3cbb531796e49dd8c781b1b6845e17}
+      \strng{authorbibnamehash}{7d3cbb531796e49dd8c781b1b6845e17}
+      \strng{authornamehash}{7d3cbb531796e49dd8c781b1b6845e17}
+      \strng{authorfullhash}{7d3cbb531796e49dd8c781b1b6845e17}
+      \strng{authorfullhashraw}{7d3cbb531796e49dd8c781b1b6845e17}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0272-2712}
+      \field{journaltitle}{Clinics in Laboratory Medicine}
+      \field{note}{Prenatal Screening and Diagnosis: An Update}
+      \field{number}{2}
+      \field{title}{Inverted Pyramid of Care}
+      \field{volume}{36}
+      \field{year}{2016}
+      \field{pages}{305\bibrangedash 317}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.cll.2016.01.009
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0272271216300099
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0272271216300099
+      \endverb
+      \keyw{First trimester,Screening,Diagnosis,Anomalies,Maternal complications,Preeclampsia}
+    \endentry
+    \entry{sousa2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b3bc35bdf913eb911c56281213961e4}{%
+           family={Sousa},
+           familyi={S\bibinitperiod},
+           given={Idália\bibnamedelimb Costa\bibnamedelima de},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CDRR Editors}%
+      }
+      \strng{namehash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{fullhash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{fullhashraw}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{bibnamehash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{authorbibnamehash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{authornamehash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{authorfullhash}{3b3bc35bdf913eb911c56281213961e4}
+      \strng{authorfullhashraw}{3b3bc35bdf913eb911c56281213961e4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research, Society and Development}
+      \field{number}{6}
+      \field{title}{A importância do enfermeiro no pré-natal durante o acompanhamento de mulheres com diabetes gestacional}
+      \field{volume}{13}
+      \field{year}{2024}
+      \field{pages}{e3913645997}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.33448/rsd-v13i6.45997
+      \endverb
+      \verb{urlraw}
+      \verb https://rsdjournal.org/index.php/rsd/article/view/45997
+      \endverb
+      \verb{url}
+      \verb https://rsdjournal.org/index.php/rsd/article/view/45997
+      \endverb
+    \endentry
+    \entry{Souza_Prestes_Santos_Cruz_2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=36c9e7a44a0c0ccc92dd5d9a909dbd5d}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Geovana\bibnamedelimb Leal\bibnamedelima de},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca008e31fcc4f07f7e9c8c5ce8303e17}{%
+           family={Prestes},
+           familyi={P\bibinitperiod},
+           given={Karine\bibnamedelima Matos},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=989ab49b4a85324710882690e0ffec1f}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Rayssa\bibnamedelimb Sousa\bibnamedelima dos},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=758fe5d32bead2d3d7381ae5384dff83}{%
+           family={Cruz},
+           familyi={C\bibinitperiod},
+           given={Ann\bibnamedelimb Caroline\bibnamedelima Nascimento},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{37c65cb84673e86429e8b13f68e1097d}
+      \strng{fullhash}{dfb628a6b10b848258d63fb44e280127}
+      \strng{fullhashraw}{dfb628a6b10b848258d63fb44e280127}
+      \strng{bibnamehash}{37c65cb84673e86429e8b13f68e1097d}
+      \strng{authorbibnamehash}{37c65cb84673e86429e8b13f68e1097d}
+      \strng{authornamehash}{37c65cb84673e86429e8b13f68e1097d}
+      \strng{authorfullhash}{dfb628a6b10b848258d63fb44e280127}
+      \strng{authorfullhashraw}{dfb628a6b10b848258d63fb44e280127}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{REVISTA FOCO}
+      \field{number}{12}
+      \field{title}{A IMPORTÂNCIA DO PRÉ-NATAL PARA SAÚDE MATERNO-INFANTIL}
+      \field{volume}{18}
+      \field{year}{2025}
+      \field{pages}{e10833}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.54751/revistafoco.v18n12-009
+      \endverb
+      \verb{urlraw}
+      \verb https://ojs.focopublicacoes.com.br/foco/article/view/10833
+      \endverb
+      \verb{url}
+      \verb https://ojs.focopublicacoes.com.br/foco/article/view/10833
       \endverb
     \endentry
     \entry{Torres-Torres}{article}{}{}
@@ -2139,6 +2716,35 @@
       \verb{url}
       \verb https://rsdjournal.org/index.php/rsd/article/view/22903
       \endverb
+    \endentry
+    \entry{zamoraobando2022}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a09aad7870dcaa4847be2e1634ae8c2b}{%
+           family={Zamora-Obando},
+           familyi={Z\bibinithyphendelim O\bibinitperiod},
+           given={H.\bibnamedelimi R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{fullhash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{fullhashraw}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{bibnamehash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{authorbibnamehash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{authornamehash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{authorfullhash}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \strng{authorfullhashraw}{0a8d4e1aed6d5567855a450a429c9b0b}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Química Nova}
+      \field{title}{Biomarcadores moleculares de doenças humanas: conceitos fundamentais, modelos de estudo e aplicações clínicas}
+      \field{year}{2022}
     \endentry
   \enddatalist
 \endrefsection

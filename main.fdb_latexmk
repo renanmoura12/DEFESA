@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1770843284.03807 "main.bcf" "main.bbl" "main" 1770946626.49251 0
-  "main.bcf" 1770946626.31147 117948 f6dfefa9fd7b6565c034ed190193c3d1 "pdflatex"
-  "referencias.bib" 1770838320.7688 26589 e537121a23560a18616107edce94c388 ""
+["biber main"] 1771166182.26967 "main.bcf" "main.bbl" "main" 1771181491.35065 0
+  "main.bcf" 1771181491.19186 118091 8c32bb69ebeaa0e4a8a5d4c48b66c8b1 "pdflatex"
+  "referencias.bib" 1771165057.96146 27397 6fb585625d9e5aa71145e89c19714a46 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1770946620.21047 "/Users/renanmoura/Downloads/DEFESA/main.tex" "main.pdf" "main" 1770946626.49285 0
-  "/Users/renanmoura/Downloads/DEFESA/main.tex" 1770946619.95792 83658 6c7edce63c6597f9e9627490129fb07e ""
+["pdflatex"] 1771181485.77493 "/Users/renanmoura/Downloads/DEFESA/main.tex" "main.pdf" "main" 1771181491.35092 0
+  "/Users/renanmoura/Downloads/DEFESA/main.tex" 1771181485.5295 88858 1707944b107b951360b12ac7e10fd98a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -321,23 +321,25 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1764012924 3345741 fc92dc418c93fb1715ecb04bd0e90245 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "ExportService.cs" 1770482740.34659 4778 684b3400f95305be37dd3fd79f405dee ""
-  "finalAlg_clean.py" 1770576864.02808 13016 46047107b943e3230a8301410cb604a3 ""
+  "imagens/PAPPa.png" 1771165659.8478 551756 ceb51cccef9050643814b27aa7b7c9a0 ""
   "imagens/analise_overfitting.png" 1770940658.85579 189142 3dfdcf4c81a5cbd4878e014c8c9f28ea ""
   "imagens/avaliacao_lightgbm.png" 1770946125.33162 326247 a08d83f7b55aa4c2d6a87273f2c5c072 ""
   "imagens/diagrama_embrion.png" 1764807374.00277 83646 b6458ebd73ed115181da53f96b800bd7 ""
-  "imagens/diagrama_metod.png" 1770473875.94679 16057 01276cd8f01c132f345d9d8597c02a8a ""
   "imagens/effectiveness_ml_predicting.pdf" 1764701846.84671 154617 714b7b2c8d54fbeef0eda2de894c10bf ""
   "imagens/entrada.png" 1770484253.0871 118682 8c9979cfd5757521c4563f53a256ba1b ""
   "imagens/heroku.png" 1764804259.48374 305226 7549d34a76488557d7e124f8fbf90dc8 ""
+  "imagens/light_gbm_modelo_final.pdf" 1771177132.84202 409669 3d324ad56af384a1f0ea719411176b1c ""
+  "imagens/pipeline.png" 1771178028.6127 15834 079ef2424baf3cf6e1c43b8002a25b31 ""
   "imagens/probabilidades_matriz_confusao.png" 1770946125.80874 117094 ff0f3afccbe6a9fdd6ef244589de88df ""
+  "imagens/revisaoEscopoFinal.pdf" 1771178608.30857 311023 8245bc97b8fd143d60e705b572a6be57 ""
   "imagens/swagger.png" 1764806668.23046 120515 a8a79f2f95b1af7a7adb1e4a8831cc49 ""
   "imagens/uepb.png" 1764023018 46583 f6e75444f8bc524e657a54f6c3db5500 ""
-  "main.aux" 1770946626.25145 19571 82427b5935289725ffa146f3ea6c0318 "pdflatex"
-  "main.bbl" 1770843286.28062 115793 475cb396fd1e099facf6302ff0098e73 "biber main"
-  "main.out" 1770946626.30826 4980 3b03e5576bd712d61aec26d26cc31339 "pdflatex"
-  "main.run.xml" 1770946626.31219 2444 1113619487f6620ff2ae6549d069e0ae "pdflatex"
-  "main.tex" 1770946619.95792 83658 6c7edce63c6597f9e9627490129fb07e ""
-  "main.toc" 1770946626.31226 4685 d337d74a585cf974245e4d40700d8a1e "pdflatex"
+  "main.aux" 1771181491.13233 20808 7916cbaaf00b676b9f065a324e4ec0fb "pdflatex"
+  "main.bbl" 1771166184.39462 118203 ec6ae08bafa4e382a029dd15ab6f6a53 "biber main"
+  "main.out" 1771181491.18892 5042 e199b18c693f943def0e593371473262 "pdflatex"
+  "main.run.xml" 1771181491.19259 2444 1113619487f6620ff2ae6549d069e0ae "pdflatex"
+  "main.tex" 1771181485.5295 88858 1707944b107b951360b12ac7e10fd98a ""
+  "main.toc" 1771181491.19266 4800 8eca2bcaa87f0a7bead6719c06a85eac "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
