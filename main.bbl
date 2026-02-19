@@ -252,26 +252,66 @@
       \verb 10.1038/s41591-019-0724-8
       \endverb
     \endentry
+    \entry{Beinecke2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=11d57d38abf936fe1ef1943a788bbf93}{%
+           family={Beinecke},
+           familyi={B\bibinitperiod},
+           given={Janna\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04eb0585f6e0c3fd4facc7ebcfd6b6c4}{%
+           family={Heider},
+           familyi={H\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{841dee89452fa21501144747e55f33f6}
+      \strng{fullhash}{841dee89452fa21501144747e55f33f6}
+      \strng{fullhashraw}{841dee89452fa21501144747e55f33f6}
+      \strng{bibnamehash}{841dee89452fa21501144747e55f33f6}
+      \strng{authorbibnamehash}{841dee89452fa21501144747e55f33f6}
+      \strng{authornamehash}{841dee89452fa21501144747e55f33f6}
+      \strng{authorfullhash}{841dee89452fa21501144747e55f33f6}
+      \strng{authorfullhashraw}{841dee89452fa21501144747e55f33f6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BioData Mining}
+      \field{number}{1}
+      \field{title}{Gaussian Noise Up-sampling is Better Suited than SMOTE and ADASYN for Clinical Decision Making}
+      \field{volume}{14}
+      \field{year}{2021}
+      \field{pages}{49}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s13040-021-00283-6
+      \endverb
+    \endentry
     \entry{brasil2022_gestacao_alto_risco}{manual}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=7b22ce690b1070af7af42e2cffb6a5a1}{%
-           family={{Brasil. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Departamento de Ações Programáticas}},
+        {{un=0,uniquepart=base,hash=03cd123deb248ddc10a23a476d6f0975}{%
+           family={{Brasil. Ministério da Saúde}},
            familyi={B\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Brasília, DF, Brasil}%
       }
       \list{organization}{1}{%
-        {Ministério da Saúde}%
+        {Brasil. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Departamento de Ações Programáticas}%
       }
-      \strng{namehash}{7b22ce690b1070af7af42e2cffb6a5a1}
-      \strng{fullhash}{7b22ce690b1070af7af42e2cffb6a5a1}
-      \strng{fullhashraw}{7b22ce690b1070af7af42e2cffb6a5a1}
-      \strng{bibnamehash}{7b22ce690b1070af7af42e2cffb6a5a1}
-      \strng{authorbibnamehash}{7b22ce690b1070af7af42e2cffb6a5a1}
-      \strng{authornamehash}{7b22ce690b1070af7af42e2cffb6a5a1}
-      \strng{authorfullhash}{7b22ce690b1070af7af42e2cffb6a5a1}
-      \strng{authorfullhashraw}{7b22ce690b1070af7af42e2cffb6a5a1}
+      \strng{namehash}{03cd123deb248ddc10a23a476d6f0975}
+      \strng{fullhash}{03cd123deb248ddc10a23a476d6f0975}
+      \strng{fullhashraw}{03cd123deb248ddc10a23a476d6f0975}
+      \strng{bibnamehash}{03cd123deb248ddc10a23a476d6f0975}
+      \strng{authorbibnamehash}{03cd123deb248ddc10a23a476d6f0975}
+      \strng{authornamehash}{03cd123deb248ddc10a23a476d6f0975}
+      \strng{authorfullhash}{03cd123deb248ddc10a23a476d6f0975}
+      \strng{authorfullhashraw}{03cd123deb248ddc10a23a476d6f0975}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -504,6 +544,121 @@
       \verb 10.1016/S0140-6736(20)32335-7
       \endverb
     \endentry
+    \entry{Chawla2002}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=07f6b2699d3cab07b3a5b04353899cba}{%
+           family={Chawla},
+           familyi={C\bibinitperiod},
+           given={Nitesh\bibnamedelima V.},
+           giveni={N\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07156c210eaf004bb9d8ec5b07f02d55}{%
+           family={Bowyer},
+           familyi={B\bibinitperiod},
+           given={Kevin\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f083c041520d8fa6be3faa597476d15}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Lawrence\bibnamedelima O.},
+           giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7cf2422c92b85e461acc6dd47fdb3ba8}{%
+           family={Kegelmeyer},
+           familyi={K\bibinitperiod},
+           given={W.\bibnamedelimi Philip},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6bcc313fb25bc61f74b62ca709ae4b05}
+      \strng{fullhash}{c8dfb87590a41f2f9294282b456dede4}
+      \strng{fullhashraw}{c8dfb87590a41f2f9294282b456dede4}
+      \strng{bibnamehash}{6bcc313fb25bc61f74b62ca709ae4b05}
+      \strng{authorbibnamehash}{6bcc313fb25bc61f74b62ca709ae4b05}
+      \strng{authornamehash}{6bcc313fb25bc61f74b62ca709ae4b05}
+      \strng{authorfullhash}{c8dfb87590a41f2f9294282b456dede4}
+      \strng{authorfullhashraw}{c8dfb87590a41f2f9294282b456dede4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Artificial Intelligence Research}
+      \field{title}{SMOTE: Synthetic Minority Over-sampling Technique}
+      \field{volume}{16}
+      \field{year}{2002}
+      \field{pages}{321\bibrangedash 357}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1613/jair.953
+      \endverb
+    \endentry
+    \entry{Chlap2021}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=4e1d16434f23b88ee7ffd40a176ff593}{%
+           family={Chlap},
+           familyi={C\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d6ee237baed14758c4aa28b13e7d05b}{%
+           family={Min},
+           familyi={M\bibinitperiod},
+           given={Hang},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=daf46a327780d03c6b6be0c8ce378525}{%
+           family={Vandenberg},
+           familyi={V\bibinitperiod},
+           given={Nym},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f7397e2c366cde7d6f5fb26470e455f}{%
+           family={Dowling},
+           familyi={D\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1110f654b79b1d5996e16dfc5a7aacbe}{%
+           family={Holloway},
+           familyi={H\bibinitperiod},
+           given={Lois},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=940ba228b29fdf01379e489453d12b02}{%
+           family={Haworth},
+           familyi={H\bibinitperiod},
+           given={Annette},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{968640b746901336bd3fcab11b9fcd0b}
+      \strng{fullhash}{2b98b43cbe9f97ccd97823fc6d377661}
+      \strng{fullhashraw}{2b98b43cbe9f97ccd97823fc6d377661}
+      \strng{bibnamehash}{968640b746901336bd3fcab11b9fcd0b}
+      \strng{authorbibnamehash}{968640b746901336bd3fcab11b9fcd0b}
+      \strng{authornamehash}{968640b746901336bd3fcab11b9fcd0b}
+      \strng{authorfullhash}{2b98b43cbe9f97ccd97823fc6d377661}
+      \strng{authorfullhashraw}{2b98b43cbe9f97ccd97823fc6d377661}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Medical Imaging and Radiation Oncology}
+      \field{number}{5}
+      \field{title}{A Review of Medical Image Data Augmentation Techniques for Deep Learning Applications}
+      \field{volume}{65}
+      \field{year}{2021}
+      \field{pages}{545\bibrangedash 563}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1111/1754-9485.13261
+      \endverb
+    \endentry
     \entry{Deo2015}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d847506d1da7717a58dd021fec029635}{%
@@ -592,6 +747,45 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1080/10641955.2024.2312165
+      \endverb
+    \endentry
+    \entry{Elreedy2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a53dc9f02d2a3c322d58a9774daa5984}{%
+           family={Elreedy},
+           familyi={E\bibinitperiod},
+           given={Dina},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=624347660b6fb5c22176297940f06932}{%
+           family={Atiya},
+           familyi={A\bibinitperiod},
+           given={Amir\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{54259d549ed3ffac2c1c956d5a9bf220}
+      \strng{fullhash}{54259d549ed3ffac2c1c956d5a9bf220}
+      \strng{fullhashraw}{54259d549ed3ffac2c1c956d5a9bf220}
+      \strng{bibnamehash}{54259d549ed3ffac2c1c956d5a9bf220}
+      \strng{authorbibnamehash}{54259d549ed3ffac2c1c956d5a9bf220}
+      \strng{authornamehash}{54259d549ed3ffac2c1c956d5a9bf220}
+      \strng{authorfullhash}{54259d549ed3ffac2c1c956d5a9bf220}
+      \strng{authorfullhashraw}{54259d549ed3ffac2c1c956d5a9bf220}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Sciences}
+      \field{title}{A Comprehensive Analysis of Synthetic Minority Oversampling Technique (SMOTE) for Handling Class Imbalance}
+      \field{volume}{505}
+      \field{year}{2019}
+      \field{pages}{32\bibrangedash 64}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1016/j.ins.2019.07.070
       \endverb
     \endentry
     \entry{garovic2022}{article}{}{}
@@ -801,6 +995,64 @@
       \endverb
       \verb{url}
       \verb https://www.himss.org/
+      \endverb
+    \endentry
+    \entry{Islam2024}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=cb7869f4a3141071de0d51773114b3f7}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Md.\bibnamedelimi Shahidul},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8228d13f19806c762b4873e397766f51}{%
+           family={Kamal},
+           familyi={K\bibinitperiod},
+           given={Khondoker\bibnamedelima Mirazul},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ae81f19fe64a6831830684743aa5796}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Md.\bibnamedelimi Golam\bibnamedelima Rabiul},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4d9b87fb1bc1aa4f9f11b0238caa5b8}{%
+           family={Hassan},
+           familyi={H\bibinitperiod},
+           given={Md.\bibnamedelimi Rafiul},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64c755a743b8b6016cab85210a257809}{%
+           family={Hassan},
+           familyi={H\bibinitperiod},
+           given={Mir\bibnamedelima Mehedi},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{29f78689ca0a1f40d7535a36df86da48}
+      \strng{fullhash}{f60c815bab9bd19c46c0d6a238521835}
+      \strng{fullhashraw}{f60c815bab9bd19c46c0d6a238521835}
+      \strng{bibnamehash}{29f78689ca0a1f40d7535a36df86da48}
+      \strng{authorbibnamehash}{29f78689ca0a1f40d7535a36df86da48}
+      \strng{authornamehash}{29f78689ca0a1f40d7535a36df86da48}
+      \strng{authorfullhash}{f60c815bab9bd19c46c0d6a238521835}
+      \strng{authorfullhashraw}{f60c815bab9bd19c46c0d6a238521835}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Brain Informatics}
+      \field{number}{1}
+      \field{title}{Interpreting Artificial Intelligence Models: A Systematic Review on the Application of LIME and SHAP in Alzheimer's Disease Detection}
+      \field{volume}{11}
+      \field{year}{2024}
+      \field{pages}{3}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s40708-024-00222-1
       \endverb
     \endentry
     \entry{Jaiswal2024}{article}{}{}
@@ -1234,6 +1486,45 @@
       \verb{url}
       \verb https://bjihs.emnuvens.com.br/bjihs/article/view/2000
       \endverb
+    \endentry
+    \entry{Lundberg2017}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a1075150e1e1dad8127b019f7ca9031}{%
+           family={Lundberg},
+           familyi={L\bibinitperiod},
+           given={Scott\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee964079d93879aaef2382a5fff343d3}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Su-In},
+           giveni={S\bibinithyphendelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{fullhash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{fullhashraw}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{bibnamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authorbibnamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authornamehash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authorfullhash}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \strng{authorfullhashraw}{9cd6e49767b1dfa9f5df9a46216a8739}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{A Unified Approach to Interpreting Model Predictions}
+      \field{volume}{30}
+      \field{year}{2017}
+      \field{pages}{4765\bibrangedash 4774}
+      \range{pages}{10}
     \endentry
     \entry{Maayeh_2020}{article}{}{}
       \name{author}{2}{}{%

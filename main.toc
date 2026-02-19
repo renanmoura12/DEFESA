@@ -9,32 +9,35 @@
 \contentsline {section}{\numberline {3.2}Pré-eclâmpsia}{13}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Biomarcadores}{14}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Machine Learning}{15}{section.3.4}%
-\contentsline {section}{\numberline {3.5}API REST}{18}{section.3.5}%
-\contentsline {chapter}{\numberline {4}ESTADO DA ARTE}{20}{chapter.4}%
-\contentsline {chapter}{\numberline {5}METODOLOGIA}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Análise dos dados}{24}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Preparação dos dados e validação}{24}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Treinamento do modelo}{25}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Validação do modelo}{25}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Desenvolvimento da API}{25}{section.5.5}%
-\contentsline {chapter}{\numberline {6}DESENVOLVIMENTO DO MODELO}{26}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Dados}{26}{section.6.1}%
+\contentsline {subsection}{\numberline {3.4.1}SMOTE (Synthetic Minority Over-sampling Technique)}{18}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}DATA AUGMENTATION GAUSSIANA}{19}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}SHAP (SHapley Additive exPlanations)}{19}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}API REST}{20}{section.3.5}%
+\contentsline {chapter}{\numberline {4}ESTADO DA ARTE}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {5}METODOLOGIA}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Análise dos dados}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Preparação dos dados e validação}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Treinamento do modelo}{26}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Validação do modelo}{26}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Disponibilização do modelo}{26}{section.5.5}%
+\contentsline {chapter}{\numberline {6}DESENVOLVIMENTO DO MODELO}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Dados}{27}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Extração e Integração dos Dados}{27}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Pré-processamento e Tratamento dos Dados}{28}{subsection.6.1.2}%
-\contentsline {subsubsection}{Identificação de Episódios Gestacionais}{28}{subsection.6.1.2}%
-\contentsline {subsubsection}{Padronização de Variáveis Categóricas}{29}{subsection.6.1.2}%
-\contentsline {subsubsection}{Cálculo da Idade Materna}{29}{subsection.6.1.2}%
-\contentsline {subsubsection}{Tratamento de Valores Ausentes}{29}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}Pré-processamento e Tratamento dos Dados}{29}{subsection.6.1.2}%
+\contentsline {subsubsection}{Identificação de Episódios Gestacionais}{29}{subsection.6.1.2}%
+\contentsline {subsubsection}{Padronização de Variáveis Categóricas}{30}{subsection.6.1.2}%
+\contentsline {subsubsection}{Cálculo da Idade Materna}{30}{subsection.6.1.2}%
+\contentsline {subsubsection}{Tratamento de Valores Ausentes}{30}{subsection.6.1.2}%
 \contentsline {subsubsection}{Aplicação de Limites Fisiológicos}{30}{subsection.6.1.2}%
-\contentsline {subsubsection}{Ajuste do Peso Materno}{30}{subsection.6.1.2}%
-\contentsline {subsubsection}{Extração de Informações de Texto Livre}{30}{subsection.6.1.2}%
-\contentsline {subsubsection}{Pipeline de Pré-processamento}{30}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Modelo PPML}{31}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Resultados}{33}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Discussão}{36}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Disponibilização}{38}{section.6.5}%
-\contentsline {chapter}{\numberline {7}CONCLUSÃO}{41}{chapter.7}%
-\contentsline {chapter}{REFERÊNCIAS}{43}{section*.16}%
+\contentsline {subsubsection}{Ajuste do Peso Materno}{31}{subsection.6.1.2}%
+\contentsline {subsubsection}{Extração de Informações de Texto Livre}{31}{subsection.6.1.2}%
+\contentsline {subsubsection}{Pipeline de Pré-processamento}{31}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Modelo PPML}{32}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Resultados}{34}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Discussão}{37}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Disponibilização}{39}{section.6.5}%
+\contentsline {chapter}{\numberline {7}CONCLUSÃO}{42}{chapter.7}%
+\contentsline {chapter}{REFERÊNCIAS}{44}{section*.16}%
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
@@ -85,8 +88,8 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {chapter}{APÊNDICES}{48}{section*.16}%
-\contentsline {chapter}{\numberline {A}Protocolo da revisão de escopo}{48}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Revisão de escopo}{59}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Algoritmo de processamento e exportação de laudos médicos}{78}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Algoritmo de treinamento do modelo LightGBM}{83}{appendix.D}%
+\contentsline {chapter}{APÊNDICES}{50}{section*.16}%
+\contentsline {chapter}{\numberline {A}Protocolo da revisão de escopo}{50}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Revisão de escopo}{61}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Algoritmo de processamento e exportação de laudos médicos}{80}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Algoritmo de treinamento do modelo LightGBM}{85}{appendix.D}%

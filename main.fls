@@ -602,7 +602,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
 INPUT ./main.toc
 INPUT ./main.toc
@@ -676,11 +675,11 @@ INPUT ./imagens/diagrama_embrion.png
 INPUT ./imagens/diagrama_embrion.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -716,10 +715,11 @@ INPUT ./imagens/swagger.png
 INPUT ./imagens/swagger.png
 INPUT ./imagens/swagger.png
 INPUT ./imagens/swagger.png
-INPUT ./imagens/heroku.png
-INPUT ./imagens/heroku.png
-INPUT ./imagens/heroku.png
-INPUT ./imagens/heroku.png
+INPUT ./imagens/pastas.png
+INPUT ./imagens/pastas.png
+INPUT ./imagens/pastas.png
+INPUT ./imagens/pastas.png
+INPUT ./imagens/pastas.png
 INPUT ./imagens/effectiveness_ml_predicting.pdf
 INPUT ./imagens/effectiveness_ml_predicting.pdf
 INPUT ./imagens/effectiveness_ml_predicting.pdf
