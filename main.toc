@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {3.4.1}SMOTE (Synthetic Minority Over-sampling Technique)}{18}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}DATA AUGMENTATION GAUSSIANA}{19}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}SHAP (SHapley Additive exPlanations)}{19}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}API REST}{20}{section.3.5}%
+\contentsline {section}{\numberline {3.5}API REST}{19}{section.3.5}%
 \contentsline {chapter}{\numberline {4}ESTADO DA ARTE}{21}{chapter.4}%
 \contentsline {chapter}{\numberline {5}METODOLOGIA}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Análise dos dados}{25}{section.5.1}%
