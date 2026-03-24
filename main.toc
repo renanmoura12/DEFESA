@@ -20,6 +20,7 @@
 \contentsline {section}{\numberline {5.3}Treinamento do modelo}{26}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Validação do modelo}{26}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Disponibilização do modelo}{26}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Aspectos Éticos}{26}{section.5.6}%
 \contentsline {chapter}{\numberline {6}DESENVOLVIMENTO DO MODELO}{27}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Dados}{27}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Extração e Integração dos Dados}{27}{subsection.6.1.1}%
@@ -36,8 +37,8 @@
 \contentsline {section}{\numberline {6.3}Resultados}{34}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Discussão}{37}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Disponibilização}{39}{section.6.5}%
-\contentsline {chapter}{\numberline {7}CONCLUSÃO}{42}{chapter.7}%
-\contentsline {chapter}{REFERÊNCIAS}{44}{section*.16}%
+\contentsline {chapter}{\numberline {7}CONCLUSÃO}{43}{chapter.7}%
+\contentsline {chapter}{REFERÊNCIAS}{45}{section*.16}%
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
@@ -88,8 +89,9 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {chapter}{APÊNDICES}{50}{section*.16}%
-\contentsline {chapter}{\numberline {A}Protocolo da revisão de escopo}{50}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Revisão de escopo}{61}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Algoritmo de processamento e exportação de laudos médicos}{80}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Algoritmo de treinamento do modelo LightGBM}{85}{appendix.D}%
+\contentsline {chapter}{APÊNDICES}{51}{section*.16}%
+\contentsline {chapter}{\numberline {A}Protocolo da revisão de escopo}{51}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Revisão de escopo}{62}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Algoritmo de processamento e exportação de laudos médicos}{81}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Algoritmo de treinamento do modelo LightGBM}{86}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Parecer Consubstanciado do CEP}{95}{appendix.E}%
