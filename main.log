@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  24 MAR 2026 19:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  3 APR 2026 08:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1642,24 +1642,99 @@ File: imagens/uepb.png Graphic file (type png)
 Package pdftex.def Info: imagens/uepb.png  used on input line 163.
 (pdftex.def)             Requested size: 56.9055pt x 91.16324pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 168.
+(Font)              scaled to size 12.0pt on input line 170.
 
 
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc} <./imagens/uepb.png>]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 250.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.224 \newpage
+               [1]
+<imagens/fichaCatalografica.pdf, id=172, 597.50786pt x 845.04686pt>
+File: imagens/fichaCatalografica.pdf Graphic file (type pdf)
+<use imagens/fichaCatalografica.pdf>
+Package pdftex.def Info: imagens/fichaCatalografica.pdf  used on input line 230.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<imagens/fichaCatalografica.pdf, id=174, page=1, 597.50786pt x 845.04686pt>
+File: imagens/fichaCatalografica.pdf Graphic file (type pdf)
+<use imagens/fichaCatalografica.pdf, page 1>
+Package pdftex.def Info: imagens/fichaCatalografica.pdf , page1 used on input line 230.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: imagens/fichaCatalografica.pdf Graphic file (type pdf)
+<use imagens/fichaCatalografica.pdf, page 1>
+Package pdftex.def Info: imagens/fichaCatalografica.pdf , page1 used on input line 230.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: imagens/fichaCatalografica.pdf Graphic file (type pdf)
+<use imagens/fichaCatalografica.pdf, page 1>
+Package pdftex.def Info: imagens/fichaCatalografica.pdf , page1 used on input line 230.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: imagens/fichaCatalografica.pdf Graphic file (type pdf)
+<use imagens/fichaCatalografica.pdf, page 1>
+Package pdftex.def Info: imagens/fichaCatalografica.pdf , page1 used on input line 230.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+
+
+File: imagens/fichaCatalografica.pdf Graphic file (type pdf)
+<use imagens/fichaCatalografica.pdf, page 1>
+Package pdftex.def Info: imagens/fichaCatalografica.pdf , page1 used on input line 230.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+[2
+
+
+ <./imagens/fichaCatalografica.pdf>]
+<imagens/folhaAprovacao.pdf, id=185, 597.50786pt x 845.04686pt>
+File: imagens/folhaAprovacao.pdf Graphic file (type pdf)
+<use imagens/folhaAprovacao.pdf>
+Package pdftex.def Info: imagens/folhaAprovacao.pdf  used on input line 238.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<imagens/folhaAprovacao.pdf, id=187, page=1, 597.50786pt x 845.04686pt>
+File: imagens/folhaAprovacao.pdf Graphic file (type pdf)
+<use imagens/folhaAprovacao.pdf, page 1>
+Package pdftex.def Info: imagens/folhaAprovacao.pdf , page1 used on input line 238.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: imagens/folhaAprovacao.pdf Graphic file (type pdf)
+<use imagens/folhaAprovacao.pdf, page 1>
+Package pdftex.def Info: imagens/folhaAprovacao.pdf , page1 used on input line 238.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: imagens/folhaAprovacao.pdf Graphic file (type pdf)
+<use imagens/folhaAprovacao.pdf, page 1>
+Package pdftex.def Info: imagens/folhaAprovacao.pdf , page1 used on input line 238.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: imagens/folhaAprovacao.pdf Graphic file (type pdf)
+<use imagens/folhaAprovacao.pdf, page 1>
+Package pdftex.def Info: imagens/folhaAprovacao.pdf , page1 used on input line 238.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.251 \end{flushright}
-                       [1]
+l.238 ]{imagens/folhaAprovacao.pdf}
+                                   
+File: imagens/folhaAprovacao.pdf Graphic file (type pdf)
+<use imagens/folhaAprovacao.pdf, page 1>
+Package pdftex.def Info: imagens/folhaAprovacao.pdf , page1 used on input line 238.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [1
 
-[2]
+
+ <./imagens/folhaAprovacao.pdf>]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 250.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.253 \newpage
+               [2]
 Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
@@ -1731,7 +1806,7 @@ Cap\'{\i }tulo 3.
 ]
 
 [14]
-<imagens/PAPPa.png, id=361, 1300.86pt x 867.24pt>
+<imagens/PAPPa.png, id=391, 1300.86pt x 867.24pt>
 File: imagens/PAPPa.png Graphic file (type png)
 <use imagens/PAPPa.png>
 Package pdftex.def Info: imagens/PAPPa.png  used on input line 404.
@@ -1769,7 +1844,7 @@ Overfull \hbox (8.0153pt too wide) in paragraph at lines 577--577
 
 [24]
 Cap\'{\i }tulo 5.
-<imagens/pipeline.png, id=537, 596.2275pt x 127.37587pt>
+<imagens/pipeline.png, id=567, 596.2275pt x 127.37587pt>
 File: imagens/pipeline.png Graphic file (type png)
 <use imagens/pipeline.png>
 Package pdftex.def Info: imagens/pipeline.png  used on input line 589.
@@ -1782,7 +1857,7 @@ Package pdftex.def Info: imagens/pipeline.png  used on input line 589.
 
 [26]
 Cap\'{\i }tulo 6.
-<imagens/diagrama_embrion.png, id=549, 762.85pt x 780.9175pt>
+<imagens/diagrama_embrion.png, id=579, 762.85pt x 780.9175pt>
 File: imagens/diagrama_embrion.png Graphic file (type png)
 <use imagens/diagrama_embrion.png>
 Package pdftex.def Info: imagens/diagrama_embrion.png  used on input line 636.
@@ -1829,12 +1904,12 @@ LaTeX Info: Symbol \texttwosuperior not provided by
 
 
 [33]
-<imagens/avaliacao_lightgbm.png, id=611, 1076.823pt x 353.1594pt>
+<imagens/avaliacao_lightgbm.png, id=641, 1076.823pt x 353.1594pt>
 File: imagens/avaliacao_lightgbm.png Graphic file (type png)
 <use imagens/avaliacao_lightgbm.png>
 Package pdftex.def Info: imagens/avaliacao_lightgbm.png  used on input line 817.
 (pdftex.def)             Requested size: 455.23659pt x 149.30128pt.
-<imagens/probabilidades_matriz_confusao.png, id=612, 841.9455pt x 280.8894pt>
+<imagens/probabilidades_matriz_confusao.png, id=642, 841.9455pt x 280.8894pt>
 File: imagens/probabilidades_matriz_confusao.png Graphic file (type png)
 <use imagens/probabilidades_matriz_confusao.png>
 Package pdftex.def Info: imagens/probabilidades_matriz_confusao.png  used on input line 824.
@@ -1851,7 +1926,7 @@ Overfull \hbox (8.0153pt too wide) in paragraph at lines 906--906
 [35]
 
 [36]
-<imagens/analise_overfitting.png, id=671, 1004.553pt x 353.1594pt>
+<imagens/analise_overfitting.png, id=701, 1004.553pt x 353.1594pt>
 File: imagens/analise_overfitting.png Graphic file (type png)
 <use imagens/analise_overfitting.png>
 Package pdftex.def Info: imagens/analise_overfitting.png  used on input line 916.
@@ -1863,12 +1938,12 @@ Package pdftex.def Info: imagens/analise_overfitting.png  used on input line 916
 [38]
 
 [39]
-<imagens/heroku.png, id=687, 1475.5125pt x 729.72626pt>
+<imagens/heroku.png, id=717, 1475.5125pt x 729.72626pt>
 File: imagens/heroku.png Graphic file (type png)
 <use imagens/heroku.png>
 Package pdftex.def Info: imagens/heroku.png  used on input line 996.
 (pdftex.def)             Requested size: 455.24277pt x 225.14388pt.
-<imagens/entrada.png, id=688, 303.1325pt x 346.29375pt>
+<imagens/entrada.png, id=718, 303.1325pt x 346.29375pt>
 File: imagens/entrada.png Graphic file (type png)
 <use imagens/entrada.png>
 Package pdftex.def Info: imagens/entrada.png  used on input line 1005.
@@ -1876,7 +1951,7 @@ Package pdftex.def Info: imagens/entrada.png  used on input line 1005.
 
 
 [40 <./imagens/heroku.png>]
-<imagens/swagger.png, id=695, 1468.48625pt x 444.66125pt>
+<imagens/swagger.png, id=726, 1468.48625pt x 444.66125pt>
 File: imagens/swagger.png Graphic file (type png)
 <use imagens/swagger.png>
 Package pdftex.def Info: imagens/swagger.png  used on input line 1014.
@@ -1884,7 +1959,7 @@ Package pdftex.def Info: imagens/swagger.png  used on input line 1014.
 
 
 [41 <./imagens/entrada.png> <./imagens/swagger.png>]
-<imagens/pastas.png, id=704, 1541.76pt x 1027.84pt>
+<imagens/pastas.png, id=735, 1541.76pt x 1027.84pt>
 File: imagens/pastas.png Graphic file (type png)
 <use imagens/pastas.png>
 Package pdftex.def Info: imagens/pastas.png  used on input line 1045.
@@ -1915,12 +1990,12 @@ Cap\'{\i }tulo 7.
 
 [50]
 Ap\^endice A.
-<imagens/effectiveness_ml_predicting.pdf, id=822, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=852, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf  used on input line 1095.
 (pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
-<imagens/effectiveness_ml_predicting.pdf, id=824, page=1, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=854, page=1, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 1>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on input line 1095.
@@ -1952,7 +2027,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page1 used on
 [52
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=877, page=2, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=908, page=2, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 2>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page2 used on input line 1095.
@@ -1970,7 +2045,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page2 used on
 [53
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=907, page=3, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=938, page=3, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 3>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page3 used on input line 1095.
@@ -1988,7 +2063,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page3 used on
 [54
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=916, page=4, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=947, page=4, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 4>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page4 used on input line 1095.
@@ -2006,7 +2081,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page4 used on
 [55
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=927, page=5, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=958, page=5, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 5>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page5 used on input line 1095.
@@ -2024,7 +2099,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page5 used on
 [56
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=932, page=6, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=963, page=6, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 6>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page6 used on input line 1095.
@@ -2042,7 +2117,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page6 used on
 [57
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=945, page=7, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=975, page=7, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 7>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page7 used on input line 1095.
@@ -2060,7 +2135,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page7 used on
 [58
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=953, page=8, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=984, page=8, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 8>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page8 used on input line 1095.
@@ -2078,7 +2153,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page8 used on
 [59
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=965, page=9, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=996, page=9, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 9>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page9 used on input line 1095.
@@ -2096,7 +2171,7 @@ Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page9 used on
 [60
 
  <./imagens/effectiveness_ml_predicting.pdf>]
-<imagens/effectiveness_ml_predicting.pdf, id=976, page=10, 441.01764pt x 668.64006pt>
+<imagens/effectiveness_ml_predicting.pdf, id=1006, page=10, 441.01764pt x 668.64006pt>
 File: imagens/effectiveness_ml_predicting.pdf Graphic file (type pdf)
 <use imagens/effectiveness_ml_predicting.pdf, page 10>
 Package pdftex.def Info: imagens/effectiveness_ml_predicting.pdf , page10 used on input line 1095.
@@ -2120,12 +2195,12 @@ Ap\^endice B.
 [62
 
 ]
-<imagens/revisaoEscopoFinal.pdf, id=985, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1015, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf  used on input line 1106.
 (pdftex.def)             Requested size: 597.48073pt x 845.15544pt.
-<imagens/revisaoEscopoFinal.pdf, id=987, page=1, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1017, page=1, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 1>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page1 used on input line 1106.
@@ -2152,7 +2227,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page1 used on input li
 
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1018, page=2, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1048, page=2, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 2>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page2 used on input line 1106.
@@ -2170,7 +2245,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page2 used on input li
 [64
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1028, page=3, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1059, page=3, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 3>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page3 used on input line 1106.
@@ -2188,7 +2263,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page3 used on input li
 [65
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1034, page=4, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1065, page=4, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 4>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page4 used on input line 1106.
@@ -2206,7 +2281,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page4 used on input li
 [66
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1041, page=5, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1071, page=5, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 5>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page5 used on input line 1106.
@@ -2224,7 +2299,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page5 used on input li
 [67
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1047, page=6, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1077, page=6, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 6>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page6 used on input line 1106.
@@ -2242,7 +2317,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page6 used on input li
 [68
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1053, page=7, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1083, page=7, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 7>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page7 used on input line 1106.
@@ -2260,7 +2335,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page7 used on input li
 [69
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1059, page=8, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1089, page=8, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 8>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page8 used on input line 1106.
@@ -2278,7 +2353,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page8 used on input li
 [70
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1066, page=9, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1097, page=9, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 9>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page9 used on input line 1106.
@@ -2296,7 +2371,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page9 used on input li
 [71
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1072, page=10, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1103, page=10, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 10>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page10 used on input line 1106.
@@ -2314,7 +2389,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page10 used on input l
 [72
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1079, page=11, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1110, page=11, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 11>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page11 used on input line 1106.
@@ -2332,7 +2407,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page11 used on input l
 [73
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1085, page=12, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1116, page=12, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 12>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page12 used on input line 1106.
@@ -2350,7 +2425,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page12 used on input l
 [74
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1091, page=13, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1122, page=13, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 13>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page13 used on input line 1106.
@@ -2368,7 +2443,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page13 used on input l
 [75
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1097, page=14, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1128, page=14, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 14>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page14 used on input line 1106.
@@ -2386,7 +2461,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page14 used on input l
 [76
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1104, page=15, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1135, page=15, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 15>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page15 used on input line 1106.
@@ -2404,7 +2479,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page15 used on input l
 [77
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1110, page=16, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1141, page=16, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 16>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page16 used on input line 1106.
@@ -2422,7 +2497,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page16 used on input l
 [78
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1117, page=17, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1147, page=17, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 17>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page17 used on input line 1106.
@@ -2440,7 +2515,7 @@ Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page17 used on input l
 [79
 
  <./imagens/revisaoEscopoFinal.pdf>]
-<imagens/revisaoEscopoFinal.pdf, id=1123, page=18, 597.4822pt x 845.1575pt>
+<imagens/revisaoEscopoFinal.pdf, id=1153, page=18, 597.4822pt x 845.1575pt>
 File: imagens/revisaoEscopoFinal.pdf Graphic file (type pdf)
 <use imagens/revisaoEscopoFinal.pdf, page 18>
 Package pdftex.def Info: imagens/revisaoEscopoFinal.pdf , page18 used on input line 1106.
@@ -2479,12 +2554,12 @@ Ap\^endice D.
 [86
 
 ]
-<imagens/lightgbm_modelo_final.pdf, id=1314, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1345, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf  used on input line 1132.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<imagens/lightgbm_modelo_final.pdf, id=1316, page=1, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1347, page=1, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf, page 1>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page1 used on input line 1132.
@@ -2511,7 +2586,7 @@ Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page1 used on input
 
 
  <./imagens/lightgbm_modelo_final.pdf>]
-<imagens/lightgbm_modelo_final.pdf, id=1339, page=2, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1369, page=2, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf, page 2>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page2 used on input line 1132.
@@ -2529,7 +2604,7 @@ Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page2 used on input
 [88
 
  <./imagens/lightgbm_modelo_final.pdf>]
-<imagens/lightgbm_modelo_final.pdf, id=1344, page=3, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1375, page=3, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf, page 3>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page3 used on input line 1132.
@@ -2547,7 +2622,7 @@ Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page3 used on input
 [89
 
  <./imagens/lightgbm_modelo_final.pdf>]
-<imagens/lightgbm_modelo_final.pdf, id=1349, page=4, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1380, page=4, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf, page 4>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page4 used on input line 1132.
@@ -2565,7 +2640,7 @@ Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page4 used on input
 [90
 
  <./imagens/lightgbm_modelo_final.pdf>]
-<imagens/lightgbm_modelo_final.pdf, id=1355, page=5, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1385, page=5, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf, page 5>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page5 used on input line 1132.
@@ -2583,7 +2658,7 @@ Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page5 used on input
 [91
 
  <./imagens/lightgbm_modelo_final.pdf>]
-<imagens/lightgbm_modelo_final.pdf, id=1360, page=6, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1390, page=6, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf, page 6>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page6 used on input line 1132.
@@ -2601,7 +2676,7 @@ Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page6 used on input
 [92
 
  <./imagens/lightgbm_modelo_final.pdf>]
-<imagens/lightgbm_modelo_final.pdf, id=1365, page=7, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1395, page=7, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf, page 7>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page7 used on input line 1132.
@@ -2619,7 +2694,7 @@ Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page7 used on input
 [93
 
  <./imagens/lightgbm_modelo_final.pdf>]
-<imagens/lightgbm_modelo_final.pdf, id=1370, page=8, 597.23125pt x 845.1575pt>
+<imagens/lightgbm_modelo_final.pdf, id=1400, page=8, 597.23125pt x 845.1575pt>
 File: imagens/lightgbm_modelo_final.pdf Graphic file (type pdf)
 <use imagens/lightgbm_modelo_final.pdf, page 8>
 Package pdftex.def Info: imagens/lightgbm_modelo_final.pdf , page8 used on input line 1132.
@@ -2643,12 +2718,12 @@ Ap\^endice E.
 [95
 
 ]
-<imagens/parecer_cep.pdf, id=1379, 597.23125pt x 845.1575pt>
+<imagens/parecer_cep.pdf, id=1410, 597.23125pt x 845.1575pt>
 File: imagens/parecer_cep.pdf Graphic file (type pdf)
 <use imagens/parecer_cep.pdf>
 Package pdftex.def Info: imagens/parecer_cep.pdf  used on input line 1142.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<imagens/parecer_cep.pdf, id=1381, page=1, 597.23125pt x 845.1575pt>
+<imagens/parecer_cep.pdf, id=1412, page=1, 597.23125pt x 845.1575pt>
 File: imagens/parecer_cep.pdf Graphic file (type pdf)
 <use imagens/parecer_cep.pdf, page 1>
 Package pdftex.def Info: imagens/parecer_cep.pdf , page1 used on input line 1142.
@@ -2675,7 +2750,7 @@ Package pdftex.def Info: imagens/parecer_cep.pdf , page1 used on input line 1142
 
 
  <./imagens/parecer_cep.pdf>]
-<imagens/parecer_cep.pdf, id=1391, page=2, 597.23125pt x 845.1575pt>
+<imagens/parecer_cep.pdf, id=1421, page=2, 597.23125pt x 845.1575pt>
 File: imagens/parecer_cep.pdf Graphic file (type pdf)
 <use imagens/parecer_cep.pdf, page 2>
 Package pdftex.def Info: imagens/parecer_cep.pdf , page2 used on input line 1142.
@@ -2693,7 +2768,7 @@ Package pdftex.def Info: imagens/parecer_cep.pdf , page2 used on input line 1142
 [97
 
  <./imagens/parecer_cep.pdf>]
-<imagens/parecer_cep.pdf, id=1396, page=3, 597.23125pt x 845.1575pt>
+<imagens/parecer_cep.pdf, id=1426, page=3, 597.23125pt x 845.1575pt>
 File: imagens/parecer_cep.pdf Graphic file (type pdf)
 <use imagens/parecer_cep.pdf, page 3>
 Package pdftex.def Info: imagens/parecer_cep.pdf , page3 used on input line 1142.
@@ -2722,18 +2797,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47880 strings out of 473190
- 852948 string characters out of 5715799
- 1980497 words of memory out of 5000000
- 69935 multiletter control sequences out of 15000+600000
+ 47904 strings out of 473190
+ 853908 string characters out of 5715799
+ 1980688 words of memory out of 5000000
+ 69959 multiletter control sequences out of 15000+600000
  625189 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,17n,117p,3270b,4449s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (99 pages, 3037072 bytes).
+Output written on main.pdf (101 pages, 3063987 bytes).
 PDF statistics:
- 1516 PDF objects out of 1728 (max. 8388607)
- 1214 compressed objects within 13 object streams
+ 1546 PDF objects out of 1728 (max. 8388607)
+ 1229 compressed objects within 13 object streams
  383 named destinations out of 1000 (max. 500000)
- 607 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 637 words of extra memory for PDF output out of 10000 (max. 10000000)
 

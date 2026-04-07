@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1771630713.18969 "main.bcf" "main.bbl" "main" 1774389725.46201 0
-  "main.bcf" 1774389725.27141 118980 bb3b8660bea3594ef8c5dad678c2bc60 "pdflatex"
+["biber main"] 1771630713.18969 "main.bcf" "main.bbl" "main" 1775217053.88908 0
+  "main.bcf" 1775217053.69394 118980 bb3b8660bea3594ef8c5dad678c2bc60 "pdflatex"
   "referencias.bib" 1771455027.55651 29731 fad602037a986a3f2443249d648f2af7 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1774389719.01677 "/Users/renanmoura/Downloads/DEFESA/main.tex" "main.pdf" "main" 1774389725.46236 0
-  "/Users/renanmoura/Downloads/DEFESA/main.tex" 1774389700.11327 92668 6ebb9c2b0445a05f2247cd1aa4560407 ""
+["pdflatex"] 1775217047.33423 "/Users/renanmoura/Downloads/DEFESA/main.tex" "main.pdf" "main" 1775217053.88945 0
+  "/Users/renanmoura/Downloads/DEFESA/main.tex" 1775217047.09909 92562 0a8d443df9db44d3c9e868268b50a97e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -327,6 +327,8 @@
   "imagens/diagrama_embrion.png" 1764807374.00277 83646 b6458ebd73ed115181da53f96b800bd7 ""
   "imagens/effectiveness_ml_predicting.pdf" 1764701846.84671 154617 714b7b2c8d54fbeef0eda2de894c10bf ""
   "imagens/entrada.png" 1770484253.0871 118682 8c9979cfd5757521c4563f53a256ba1b ""
+  "imagens/fichaCatalografica.pdf" 1774707022.50799 8973 7d196aa27c47c330a008e766156b37b7 ""
+  "imagens/folhaAprovacao.pdf" 1774707733.83618 18841 1346ea31de5bccbe8a82f708a4d0b78b ""
   "imagens/heroku.png" 1764804259.48374 305226 7549d34a76488557d7e124f8fbf90dc8 ""
   "imagens/lightgbm_modelo_final.pdf" 1771614692.31412 59059 3bacb8bd3957bd6c5d9354b32f9a6fea ""
   "imagens/parecer_cep.pdf" 1774389677.53076 27607 995f1cdd16eb899ceb758132bb2147f4 ""
@@ -336,12 +338,12 @@
   "imagens/revisaoEscopoFinal.pdf" 1771178608.30857 311023 8245bc97b8fd143d60e705b572a6be57 ""
   "imagens/swagger.png" 1764806668.23046 120515 a8a79f2f95b1af7a7adb1e4a8831cc49 ""
   "imagens/uepb.png" 1764023018 46583 f6e75444f8bc524e657a54f6c3db5500 ""
-  "main.aux" 1774389725.19578 23630 2c2f7d1118cca4a0729cad8f4e66835d "pdflatex"
+  "main.aux" 1775217053.61622 23631 526a42bb38f5f23bc371c51b033cf3f8 "pdflatex"
   "main.bbl" 1771630728.88982 130622 5fa9343dfdf485cc83b4e127cb76dd79 "biber main"
-  "main.out" 1774389725.26771 6198 4c8c907fcc00b2cd327dc4a2dfac598c "pdflatex"
-  "main.run.xml" 1774389725.27235 2444 1113619487f6620ff2ae6549d069e0ae "pdflatex"
-  "main.tex" 1774389700.11327 92668 6ebb9c2b0445a05f2247cd1aa4560407 ""
-  "main.toc" 1774389725.27246 5297 c538cec4677a5128e5997b1166070e9d "pdflatex"
+  "main.out" 1775217053.69057 6198 4c8c907fcc00b2cd327dc4a2dfac598c "pdflatex"
+  "main.run.xml" 1775217053.69461 2444 1113619487f6620ff2ae6549d069e0ae "pdflatex"
+  "main.tex" 1775217047.09909 92562 0a8d443df9db44d3c9e868268b50a97e ""
+  "main.toc" 1775217053.69467 5297 c538cec4677a5128e5997b1166070e9d "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
